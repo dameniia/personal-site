@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrei Dameniia Portfolio Website</title>
+    <meta name="description" content="Andrei Dameniia Portfolio Website" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/navigation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <script src="./scripts/app.js" defer></script>
+  </head>
+
+  <body>
+    <div class="overflow_fix">
+      <nav class="nav main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="pages/resume.html">RESUME</a></li>
+          <li><a href="pages/projects.html">PROJECTS</a></li>
+          <li><a href="pages/about.html">ABOUT</a></li>
+          <li><a href="pages/patch_notes.html">PATCH NOTES</a></li>
+          <!-- <li><a href="pages/pictures.html">PHOTOS</a></li> -->
+        </ul>
+        <div class="sandwich-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <div class="wrapper">
+        <header class="main-header">
+          <h1 class="name name-large">
+            ANDREI DAMENIIA (WIP. Updated 07-10-2024)
+          </h1>
+        </header>
+        <section class="container content">
+          <h2 class="section-header">Development and QA</h2>
+
+          <div class="flex-container">
+            <div class="flex-item">
+              <p class="intro">
+                Hey, I'm <span class="colored-header">Andrei</span>.
+              </p>
+              <p class="intro">
+                Thank you for stopping by and checking out my personal site. It
+                still is work in progress :), but you can find a few things
+                about me here.
+              </p>
+              <p class="intro">
+                Check out some of <a href="pages/projects.html">my projects.</a>
+              </p>
+            </div>
+
+            <figure class="overlap-img flex-item">
+              <picture>
+                <source
+                  srcset="/images/index_pic.png"
+                  media="(min-width: 901px)"
+                />
+                <source
+                  srcset="/images/index_pic.png"
+                  media="(max-width: 900px) and (min-width: 376px)"
+                />
+                <source
+                  srcset="/images/index_pic.png"
+                  media="(max-width: 375px)"
+                />
+                <img
+                  width="300"
+                  height="320"
+                  srcset="/images/index_pic.png"
+                  alt="index picture"
+                />
+              </picture>
+            </figure>
+          </div>
+        </section>
+      </div>
+      <footer class="main-footer">
+        <div class="container main-footer-container">
+          <h3 class="name-footer">adameniia@gmail.com</h3>
+          <ul class="footer-nav">
+            <li>
+              <a href="https://www.linkedin.com/in/andrei-dameniia-03a0aa14a/"
+                ><img
+                  src="../images/linkedin-icon-footer.png"
+                  alt=""
+                  target="_blank"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/dameniia"
+                ><img
+                  src="../images/facebook-icon-footer.png"
+                  alt=""
+                  target="_blank"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

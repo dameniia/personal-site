@@ -1,0 +1,50 @@
+{
+  "patch-notes": [
+    {
+      "postId": 1,
+      "date": "11/18",
+      "body": "The development of this site started in .... It is a personal site I used to show my skills and share my professional expereience. It is a continues work in progress..."
+    },
+    {
+      "postId": 2,
+      "date": "11/18",
+      "body": "Added PATCH NOTES tab to document the progress made on this site"
+    },
+    {
+      "postId": 3,
+      "date": "...",
+      "body": "Moved the menu to a single shared React component"
+    },
+    {
+      "postId": 4,
+      "date": "...",
+      "body": "Moved the Project data to the Database"
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "programming-language": "",
+      "tags": {
+        "1": "",
+        "2": ""
+      }
+    },
+    {
+      "projectId": 2,
+      "programming-language": "",
+      "tags": {
+        "1": "",
+        "2": ""
+      }
+    },
+    {
+      "projectId": 3,
+      "programming-language": "",
+      "tags": {
+        "1": "",
+        "2": ""
+      }
+    }
+  ]
+}

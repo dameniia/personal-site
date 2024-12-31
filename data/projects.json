@@ -1,0 +1,100 @@
+[
+  {
+    "projectName": "Manual tester tool",
+    "projectImage": "../images/project1.png",
+    "projectDetails": "Java JavaFX Selenium Maven",
+    "projectDescription": "Allows the user to start a clean state browser of choice in one of 3 environments, login and search for a specific item. Saves 2-5 mins per test case.",
+    "link": "https://github.com/Lululemon/lulu-qa-app"
+  },
+  {
+    "projectName": "ATG inventory tool",
+    "projectImage": "../images/project2.png",
+    "projectDetails": "Java JavaFX Selenium Maven",
+    "projectDescription": "Allows the user to quickly adjust the ATG inventory and test limited stock scenarios on Product Display Page and My Bag page. Saves 5-10 mins per test case.",
+    "link": "https://github.com/Lululemon/lulu-qa-app"
+  },
+  {
+    "projectName": "OMS inventory tool",
+    "projectImage": "../images/project3.png",
+    "projectDetails": "Java JavaFX Selenium Maven",
+    "projectDescription": "Allows the user to rapidly adjust the OMS inventory and test limited stock scenarios on order submit. Saves 5-15 mins per test case.",
+    "link": "https://github.com/Lululemon/lulu-qa-app"
+  },
+  {
+    "projectName": "Order Placement tool",
+    "projectImage": "../images/project4.png",
+    "projectDetails": "Java JavaFX Selenium Maven",
+    "projectDescription": "Designed for placing the orders for Finance, smoke and e2e testing. Saves 5-10 mins per order.",
+    "link": "https://github.com/Lululemon/lulu-qa-app"
+  },
+  {
+    "projectName": "Tic Tac Toe Game",
+    "projectImage": "../images/tic-tac-toe.png",
+    "projectDetails": "HTML CSS JavaScript",
+    "projectDescription": "Tic Tac Toe game built with Javascript.",
+    "link": "http://adameniia.com/projects/tic_tac_toe_game/"
+  },
+  {
+    "projectName": "Google Maps clone",
+    "projectImage": "../images/google_maps_clone.png",
+    "projectDetails": "HTML CSS JavaScript",
+    "projectDescription": "Google Maps clone built using Mapbox apis. Shows the route and calculates the distance.",
+    "link": "http://adameniia.com/projects/google_maps_clone/"
+  },
+  {
+    "projectName": "Shopping Cart",
+    "projectImage": "../images/shopping_cart.png",
+    "projectDetails": "HTML CSS JavaScript Parcel",
+    "projectDescription": "Add items to the cart and see the cart updated on all pages",
+    "link": "https://adameniia-shopping-cart.herokuapp.com/store.html"
+  },
+  {
+    "projectName": "MIDI Piano",
+    "projectImage": "../images/midi_piano.png",
+    "projectDetails": "HTML CSS JavaScript",
+    "projectDescription": "MIDI piano built with Javascript. Use the keyboard to place some music",
+    "link": "http://adameniia.com/projects/midi_piano/"
+  },
+  {
+    "projectName": "Login app",
+    "projectImage": "../images/spring-login-app.png",
+    "projectDetails": "Java Springboot Maven",
+    "projectDescription": "Embarrassingly simple login app built with JAVA Springboot and Spring-mvc",
+    "link": "https://spring-login-app.herokuapp.com/"
+  },
+  {
+    "projectName": "SF Badlands Website",
+    "projectImage": "../images/project5.png",
+    "projectDetails": "JavaScript HTML CSS Bootsrap",
+    "projectDescription": "A simple, one page web site created for the place I worked at while getting my AA/AS in Computer Science. The place is closed and so the official site.",
+    "link": "http://adameniia.com/sfbadlands/"
+  },
+  {
+    "projectName": "The final project of Data Structures with Java class",
+    "projectImage": "../images/placeholder.png",
+    "projectDetails": "Java",
+    "projectDescription": "One of the final projects of the Data Structures class. The program builds a hash tree based on the database and uses it for search.",
+    "link": "https://github.com/Lululemon/lulu-qa-app"
+  },
+  {
+    "projectName": "Advanced TODO list",
+    "projectImage": "../images/advn_todo_list.png",
+    "projectDetails": "HTML CSS JavaScript",
+    "projectDescription": "A todo list app that uses cookies to retain the state of the list on browser refresh or reopening the window",
+    "link": "http://adameniia.com/projects/advanced_todo_list"
+  },
+  {
+    "projectName": "Quiz",
+    "projectImage": "../images/quiz.png",
+    "projectDetails": "HTML CSS JavaScript",
+    "projectDescription": "A simple quiz built with Javascript. Answer the questions correctly and get a congratulation!",
+    "link": "http://adameniia.com/projects/quiz/"
+  },
+  {
+    "projectName": "Date Picker",
+    "projectImage": "../images/date_picker.png",
+    "projectDetails": "HTML CSS JavaScript Parcel",
+    "projectDescription": "A date picker build with Parcel and Date-FNS libraries",
+    "link": "https://adameniia-date-picker.herokuapp.com/"
+  }
+]

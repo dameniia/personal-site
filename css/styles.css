@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
+
+/* Global Styles */
+:root {
+  --base-color: rgb(210, 109, 0);
+  --text-color: #5d5d5d;
+  --header-bg: rgba(0, 0, 0, 0.6);
+  --border-color: rgba(116, 116, 116, 0.173);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: var(--text-color);
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Images */
+img {
+  display: block;
+}
+
+.about-band-image {
+  float: left;
+  margin: 20px;
+  border-radius: 6px;
+}
+
+/* Header */
+.main-header {
+  height: 200px;
+  background-color: var(--header-bg);
+  /* background-image: url(images/khalid-main-header.jpg); */
+  background-blend-mode: multiply;
+  background-size: cover;
+  padding-bottom: 30px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+}
+
+.name {
+  text-align: center;
+  font-size: 2em;
+  font-weight: normal;
+  color: #fff;
+  margin: 0;
+}
+
+.name-large {
+  font-size: 1.6em;
+  padding-top: 1em;
+}
+
+/* Sections and Containers */
+.content-section {
+  margin: 1em;
+}
+
+/* Needed to keep the footer stick to the bottom */
+.wrapper {
+  position: relative; /* Ensures footer is positioned relative to this container */
+  height: 100%; /* Full height to fill the viewport */
+  display: flex;
+  flex-direction: column; /* Allows content to stack vertically */
+  padding-bottom: 10em; /* Match footer height */
+}
+
+/* Content to push down the main section and keep the footer stick to the bottom*/
+.content {
+  flex: 1; /* Fills the remaining space above the footer */
+}
+
+.container {
+  max-width: 900px;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  padding: 20px 0 0 0;
+}
+
+.flex-item {
+  max-width: 300px;
+}
+
+.flex-container > div > p,
+.flex-container > figure {
+  margin: 15px;
+}
+
+/* Section Headers */
+.section-header {
+  font-weight: normal;
+  color: var(--header-bg);
+  text-align: center;
+  font-size: 1.6em;
+}
+
+p.intro {
+  font-size: 1.4em;
+  line-height: 1.4;
+}
+
+p.intro a {
+  color: var(--base-color);
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  gap: 1em;
+  justify-content: space-evenly;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.service p {
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+}
+
+.service h3 {
+  margin-bottom: 0;
+}
+
+/* Resume Page */
+.resume-flex {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 1em 1em;
+  justify-content: center;
+}
+
+.resume-flex-row-contacts,
+.resume-flex-row-education,
+.experience-flex-row-education {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--border-color);
+  flex-wrap: wrap;
+}
+.colored-header {
+  color: var(--base-color);
+}
+.resume-flex-header {
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.1em;
+}
+
+.summary-points-flex,
+.skills-flex {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+}
+
+.summary-points-flex li,
+.skills-flex p {
+  margin: 0.5em;
+  padding-bottom: 0.5em;
+  letter-spacing: 0.03em;
+}
+
+.skills-flex p span {
+  font-weight: 1000;
+}
+
+.resume-flex-row-education > span,
+.experience-flex-row-education > span {
+  max-width: 40em;
+}
+
+.resume-flex-row-education span p,
+.experience-flex-row-education span p {
+  margin: 0.2em 0 0.4em;
+}
+
+.experience-flex-row-education span p:first-child {
+  font-weight: 1000;
+}
+
+.resume-flex-row-education span p:nth-child(2),
+.experience-flex-row-education span p:nth-child(2) {
+  font-style: italic;
+}
+
+.experience-flex-row-education span ul {
+  padding-left: 2em;
+}
+
+.experience-flex-row-education span ul li {
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  min-height: 3em;
+}
+
+.footer-nav li {
+  padding: 0 1.5em;
+}
+
+.name-footer {
+  text-align: center;
+  font-size: 1em;
+  color: #fff;
+}
+
+.main-footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer-container ul {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.footer-nav img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  footer {
+    position: relative;
+  }
+  .wrapper {
+    padding-bottom: 0em; 
+  }
+}
