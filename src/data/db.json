@@ -1,0 +1,73 @@
+{
+  "patch-notes": [
+    {
+      "postId": 1,
+      "date": "November 1, 2018",
+      "title": "Site launched",
+      "body": "The development of this site started. It is a personal site to show my skills and share my professional experience. It is a continuous work in progress."
+    },
+    {
+      "postId": 2,
+      "date": "October 15, 2025",
+      "title": "Patch Notes added",
+      "body": "Added Patch Notes tab to document the progress made on this site."
+    },
+    {
+      "postId": 3,
+      "date": "March 1, 2025",
+      "title": "Migrated to React",
+      "body": "Migrated the site from static HTML pages to a Vite + React SPA. Navigation is now a shared React component, routing handled by React Router."
+    },
+    {
+      "postId": 4,
+      "date": "March 1, 2025",
+      "title": "Project data moved to JSON",
+      "body": "Project cards are now driven by a JSON data file, making it easy to add or update projects without touching the component code."
+    },
+    {
+      "postId": 5,
+      "date": "March 15, 2026",
+      "title": "Full Vite + React SPA rebuild",
+      "body": "Completed a full migration from static HTML/CSS/vanilla JS to a Vite + React single-page application. Work included: converting all pages (Home, About, Resume, Projects, Patch Notes) to React components; building shared Nav and Footer components with mobile hamburger state managed in React; setting up React Router for client-side routing; reorganizing CSS into per-feature files imported by their components; moving project data to a JSON file; and moving all static images to the public/ directory with absolute paths. The old scripts/app.js and all static HTML pages have been retired."
+    },
+    {
+      "postId": 6,
+      "date": "March 15, 2026",
+      "title": "UI/UX redesign",
+      "body": "Complete visual and content overhaul. Introduced a new design system with a consistent dark header, orange accent, and clean typography. Added a sticky glass-effect nav with a full-screen mobile overlay. Rewrote all page copy to be more professional and personal — highlighting QA/tech work, outdoor adventures, travel, and photography. Cleaned up grammar and tone across every page, updated the résumé with accurate dates and polished bullet points, and gave About a proper three-card layout covering the professional, the journey, and the human behind it all."
+    },
+    {
+      "postId": 7,
+      "date": "March 15, 2026",
+      "title": "Project filters now functional",
+      "body": "The filter buttons on the Projects page are now fully wired up. Each project has been tagged by technology, and clicking a filter shows only matching projects. New filters added beyond the original four: #Selenium, #Automation, and #Spring Boot. Filters are derived directly from the project data, so they'll stay in sync automatically as new projects are added. Clicking an active filter deselects it and returns the full list.",
+      "link": "/projects"
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "programming-language": "",
+      "tags": {
+        "1": "",
+        "2": ""
+      }
+    },
+    {
+      "projectId": 2,
+      "programming-language": "",
+      "tags": {
+        "1": "",
+        "2": ""
+      }
+    },
+    {
+      "projectId": 3,
+      "programming-language": "",
+      "tags": {
+        "1": "",
+        "2": ""
+      }
+    }
+  ]
+}

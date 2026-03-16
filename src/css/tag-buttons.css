@@ -1,0 +1,64 @@
+.tag_buttons_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0 0 1.5rem;
+}
+
+.tag_buttons_container label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-light, #888);
+}
+
+.button_group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+
+.tag_button {
+  background: transparent;
+  color: var(--text-muted, #5a5a5a);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  padding: 6px 14px;
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.12));
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.tag_button:hover {
+  border-color: var(--base-color, rgb(210, 109, 0));
+  color: var(--base-color, rgb(210, 109, 0));
+}
+
+.tag_button--active {
+  background: var(--base-color, rgb(210, 109, 0));
+  color: #ffffff;
+  border-color: var(--base-color, rgb(210, 109, 0));
+}
+
+.tag_button--active:hover {
+  color: #ffffff;
+}
+
+.projects-empty {
+  text-align: center;
+  color: var(--text-light, #888);
+  padding: 3rem 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+  .tag_button {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
+}
