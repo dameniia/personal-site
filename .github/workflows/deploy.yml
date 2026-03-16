@@ -40,6 +40,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
           server-dir: ./
-          exclude: |
-            **/.git*
-            **/.git*/**
+          dangerous-clean-slate: true
