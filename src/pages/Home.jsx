@@ -19,7 +19,7 @@ export function Home() {
           <div className="home-intro-text">
             <p>
               Hey, I&apos;m <strong>Andrei</strong> — a Lead QA Analyst and
-              SDET with 8+ years in e-commerce, currently at Lululemon. I
+              SDET with 7+ years in e-commerce, currently at Lululemon. I
               spend my days building reliable test automation, driving quality
               across engineering teams, and making sure great software actually
               ships.
@@ -49,7 +49,7 @@ export function Home() {
             <img
               width="300"
               height="320"
-              src="/images/index_pic.png"
+              src="/images/index_pic.jpeg"
               alt="Andrei Dameniia"
             />
           </figure>
