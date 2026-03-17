@@ -20,22 +20,13 @@ export function Resume() {
           <p className="resume-section-title">Summary</p>
           <div className="resume-summary">
             <ul>
-              <li>8+ years delivering high-quality products in e-commerce</li>
-              <li>
-                Automation expertise with Cypress and Selenium — building and
-                maintaining CI/CD end-to-end test suites
-              </li>
-              <li>
-                Strong analytical skills using Quantum Metrics, Adobe
-                Analytics, Splunk, and Sentry
-              </li>
-              <li>Proven track record of leading quality initiatives and driving innovation</li>
-              <li>Associate&apos;s Degree in Computer Science</li>
-              <li>
-                Bachelor&apos;s in Economics &amp; Management, with 4 years of
-                business experience
-              </li>
-              <li>4.5+ years as a designer and cost estimator in construction</li>
+              <li>Lead Quality Assurance Analyst and Automation Engineer with 7+ years delivering high-quality products in e-commerce, leading teams of 4–7 QA Engineers</li>
+              <li>Reduced production defect rates by 50% and cut regression cycles from 5 days to 3 hours by automating full regression suites with Cypress and Playwright</li>
+              <li>Enabling CI/CD with reliable automated end-to-end tests integrated into GitLab pipelines; prevented at least 5 major severity issues in the last year</li>
+              <li>Initiated Accessibility testing and proactive quality processes that empowered Product teams to resolve multimillion-dollar issues</li>
+              <li>Strong analytical skills using Quantum Metrics, Adobe Analytics, Splunk, and Sentry</li>
+              <li>Associate&apos;s Degree in Computer Science; Bachelor&apos;s in Economics &amp; Management with 4 years of business experience</li>
+              <li>4.5+ years as a designer and economist in construction</li>
             </ul>
           </div>
 
@@ -43,11 +34,14 @@ export function Resume() {
           <p className="resume-section-title">Skills</p>
           <div className="skills-grid">
             <p>
-              <span>Languages &amp; frameworks: </span>Java, JavaScript,
-              React, Node.js, jQuery
+              <span>Languages &amp; frameworks: </span>Java, JavaScript, TypesScript,
+              React, Node.js
             </p>
             <p>
-              <span>Automation: </span>Cypress, WebdriverIO (Selenium)
+              <span>AI tools: </span>Copilot, Claude Code, ChatGPT
+            </p>
+            <p>
+              <span>Automation: </span>Playwright Cypress, WebdriverIO (Selenium)
             </p>
             <p>
               <span>Analytics: </span>Adobe Analytics, Quantum Metrics,
@@ -57,7 +51,7 @@ export function Resume() {
               <span>IDEs: </span>VS Code, Eclipse, WebStorm
             </p>
             <p>
-              <span>Operating systems: </span>Linux, Windows
+              <span>Operating systems: </span>Linux, MacOS, Windows
             </p>
           </div>
 
@@ -67,14 +61,13 @@ export function Resume() {
           <div className="resume-entry">
             <div className="resume-entry-main">
               <p className="resume-entry-company">Lululemon USA Inc. — Seattle, WA</p>
-              <p className="resume-entry-role">Lead Quality Assurance Analyst, Automation Engineer</p>
+              <p className="resume-entry-role">Lead Quality Assurance Analyst, AI and Automation Engineer</p>
               <ul>
-                <li>Driving quality improvements through process optimisation across the team</li>
-                <li>
-                  Enabling CI/CD with reliable automated end-to-end tests
-                  integrated into frontend app pipelines
-                </li>
-                <li>Leading the team and coordinating quality efforts across multiple projects</li>
+                <li>Driving AI innovation in QE space (Copilot and Claude Code) — building e2e tests with MCPs reducing development effort from hours to minutes</li>
+                <li>Ensured alignment with the company&apos;s best quality practices and reduced production defect rate by 50%</li>
+                <li>Enhanced PREPROD E2E automation coverage and integrated PROD E2E tests into CI/CD GitLab pipeline, preventing at least 5 major severity issues in the last year</li>
+                <li>Achieved 92.5% automation coverage of regression suite and 98.6% of smoke test suite with Cypress automation</li>
+                <li>Prepared proof of concept and cost saving analysis for migrating from Cypress to Playwright, leveraging AI for its delivery</li>
               </ul>
             </div>
             <span className="resume-entry-dates">Mar 2023 – present</span>
