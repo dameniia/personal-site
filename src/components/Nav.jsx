@@ -8,6 +8,7 @@ const navItems = [
   { path: "/projects", label: "Projects" },
   { path: "/resume", label: "Resume" },
   { path: "/patch-notes", label: "Patch Notes" },
+  { path: "/gallery", label: "Gallery", disabled: true },
 ];
 
 export function Nav() {
@@ -33,14 +34,18 @@ export function Nav() {
         <Link to="/" className="nav-logo">AD</Link>
 
         <ul className="nav-links">
-          {navItems.map(({ path, label }) => (
+          {navItems.map(({ path, label, disabled }) => (
             <li key={path}>
-              <Link
-                to={path}
-                className={location.pathname === path ? "nav-active" : ""}
-              >
-                {label}
-              </Link>
+              {disabled ? (
+                <span className="nav-disabled" title="Coming soon">{label}</span>
+              ) : (
+                <Link
+                  to={path}
+                  className={location.pathname === path ? "nav-active" : ""}
+                >
+                  {label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -63,14 +68,18 @@ export function Nav() {
         aria-hidden={!isOpen}
       >
         <ul className="nav-overlay-links">
-          {navItems.map(({ path, label }) => (
+          {navItems.map(({ path, label, disabled }) => (
             <li key={path}>
-              <Link
-                to={path}
-                className={location.pathname === path ? "nav-active" : ""}
-              >
-                {label}
-              </Link>
+              {disabled ? (
+                <span className="nav-disabled" title="Coming soon">{label}</span>
+              ) : (
+                <Link
+                  to={path}
+                  className={location.pathname === path ? "nav-active" : ""}
+                >
+                  {label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>

@@ -64,6 +64,29 @@
   border-bottom-color: var(--base-color, rgb(210, 109, 0));
 }
 
+/* ── Disabled nav item ───────────────────────────────────── */
+.nav-links .nav-disabled {
+  color: rgba(255, 255, 255, 0.25);
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: not-allowed;
+  padding-bottom: 3px;
+  border-bottom: 1px solid transparent;
+  user-select: none;
+}
+
+.nav-overlay-links .nav-disabled {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  cursor: not-allowed;
+  user-select: none;
+}
+
 /* ── Hamburger ───────────────────────────────────────────── */
 .hamburger {
   display: none;
