@@ -42,6 +42,12 @@
       "title": "Project filters now functional",
       "body": "The filter buttons on the Projects page are now fully wired up. Each project has been tagged by technology, and clicking a filter shows only matching projects. New filters added beyond the original four: #Selenium, #Automation, and #Spring Boot. Filters are derived directly from the project data, so they'll stay in sync automatically as new projects are added. Clicking an active filter deselects it and returns the full list.",
       "link": "/projects"
+    },
+    {
+      "postId": 8,
+      "date": "March 19, 2026",
+      "title": "Gallery coming soon",
+      "body": "Added a Gallery entry to the navigation menu. The page is not yet live — it is marked as coming soon and will be enabled in a future update."
     }
   ],
   "projects": [
