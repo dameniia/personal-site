@@ -1,55 +1,76 @@
 [
   {
-    "id": "rainier-hike-2025",
+    "id": "hiking-rainier-2025",
     "title": "Hiking near Rainier",
-    "date": "July 2025",
+    "date": "2025",
     "location": "Mount Rainier, WA",
-    "cover": "https://placehold.co/800x500/2a2a2a/888888?text=Cover+Photo",
+    "cover": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_800,h_500,c_fill/v1774650610/IMG_0740_c6gzlw.jpg",
     "items": [
       {
-        "id": "rainier-1",
+        "id": "IMG_0740",
         "type": "photo",
-        "src": "https://placehold.co/1200x900/2a2a2a/888888?text=Photo+1",
-        "thumbnail": "https://placehold.co/600x450/2a2a2a/888888?text=Photo+1",
-        "title": "Trail start"
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650610/IMG_0740_c6gzlw.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650610/IMG_0740_c6gzlw.jpg"
       },
       {
-        "id": "rainier-2",
+        "id": "IMG_0750",
         "type": "photo",
-        "src": "https://placehold.co/1200x1600/1a1a1a/888888?text=Photo+2",
-        "thumbnail": "https://placehold.co/600x800/1a1a1a/888888?text=Photo+2",
-        "title": "Summit view"
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650611/IMG_0750_g2hqvz.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650611/IMG_0750_g2hqvz.jpg"
       },
       {
-        "id": "rainier-3",
-        "type": "video",
-        "src": "",
-        "poster": "https://placehold.co/1200x675/0a0a0a/888888?text=Video+Poster",
-        "thumbnail": "https://placehold.co/600x338/0a0a0a/888888?text=Video",
-        "title": "Timelapse"
-      }
-    ]
-  },
-  {
-    "id": "hawaii-trip-2024",
-    "title": "Trip to Hawaii",
-    "date": "December 2024",
-    "location": "Maui, HI",
-    "cover": "https://placehold.co/800x500/1a2a3a/888888?text=Cover+Photo",
-    "items": [
-      {
-        "id": "hawaii-1",
+        "id": "IMG_0778",
         "type": "photo",
-        "src": "https://placehold.co/1200x800/1a2a3a/888888?text=Photo+1",
-        "thumbnail": "https://placehold.co/600x400/1a2a3a/888888?text=Photo+1",
-        "title": "Beach sunset"
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650611/IMG_0778_ctxzpw.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650611/IMG_0778_ctxzpw.jpg"
       },
       {
-        "id": "hawaii-2",
+        "id": "IMG_0816",
         "type": "photo",
-        "src": "https://placehold.co/1200x900/0a1a2a/888888?text=Photo+2",
-        "thumbnail": "https://placehold.co/600x450/0a1a2a/888888?text=Photo+2",
-        "title": "Road to Hana"
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650611/IMG_0816_qkh93m.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650611/IMG_0816_qkh93m.jpg"
+      },
+      {
+        "id": "IMG_0834",
+        "type": "photo",
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650612/IMG_0834_plltwd.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650612/IMG_0834_plltwd.jpg"
+      },
+      {
+        "id": "IMG_0867",
+        "type": "photo",
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650611/IMG_0867_jhqkyz.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650611/IMG_0867_jhqkyz.jpg"
+      },
+      {
+        "id": "IMG_0888",
+        "type": "photo",
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650611/IMG_0888_cnxhyo.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650611/IMG_0888_cnxhyo.jpg"
+      },
+      {
+        "id": "IMG_0907",
+        "type": "photo",
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650612/IMG_0907_wwilpj.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650612/IMG_0907_wwilpj.jpg"
+      },
+      {
+        "id": "IMG_0933",
+        "type": "photo",
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650612/IMG_0933_aois4u.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650612/IMG_0933_aois4u.jpg"
+      },
+      {
+        "id": "IMG_0956",
+        "type": "photo",
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650610/IMG_0956_l4dukq.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650610/IMG_0956_l4dukq.jpg"
+      },
+      {
+        "id": "IMG_1051",
+        "type": "photo",
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650610/IMG_1051_yrv7ic.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650610/IMG_1051_yrv7ic.jpg"
       }
     ]
   }
