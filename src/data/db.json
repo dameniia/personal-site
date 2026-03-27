@@ -49,6 +49,13 @@
       "title": "Gallery page added (WIP)",
       "body": "Added a new Gallery section for photos and videos, organized by event. Each event is its own album — click through to browse the full media grid with a lightbox viewer. Content is still being added.",
       "link": "/gallery"
+    },
+    {
+      "postId": 9,
+      "date": "March 27, 2026",
+      "title": "Alaska Trip photos added to Gallery",
+      "body": "Added the first real event to the Gallery — 11 photos from a November 2023 trip to Palmer, Talkeetna, and Anchorage, Alaska.",
+      "link": "/gallery/alaska-trip-2023"
     }
   ],
   "projects": [
