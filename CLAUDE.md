@@ -63,7 +63,9 @@ This structure is required by the CSS sticky footer implementation — do not ch
 - Videos also have `poster` (Cloudinary video thumbnail URL)
 - Cloudinary thumbnails are generated via URL params: append `w_600/` before the filename in the Cloudinary URL
 
-When adding a new project, add it to `projects.json`. When adding a patch note, add it to `db.json`. When adding gallery media, add it to `gallery.json`.
+When adding a new project, add it to `projects.json`. When adding gallery media, add it to `gallery.json`.
+
+**Patch notes** (`src/data/db.json` → `patch-notes` array): Add a patch note for every significant update — new pages, new features, content additions (e.g. new gallery event), and visual changes. Each entry needs `postId` (increment from last), `date` (e.g. `"March 27, 2026"`), `title`, `body`, and optionally `link` (relative path to the relevant page). The latest patch note is shown on the Home page, so keep titles concise.
 
 ## CSS
 
