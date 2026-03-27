@@ -1,0 +1,389 @@
+/* ── Gallery page (event cards) ───────────────────────────── */
+.gallery-wip {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  letter-spacing: 0.04em;
+  margin-bottom: 1.75rem;
+  padding: 0.6rem 1rem;
+  border-left: 3px solid var(--base-color);
+  background: var(--surface-alt);
+}
+
+.gallery-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.gallery-events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+/* ── Event card ───────────────────────────────────────────── */
+.gallery-event-card {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--surface-alt);
+  text-decoration: none;
+  aspect-ratio: 16 / 10;
+}
+
+.gallery-event-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-event-card:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-event-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(5, 5, 5, 0.82) 0%,
+    rgba(5, 5, 5, 0.2) 55%,
+    transparent 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem 1.4rem;
+  transition: background 0.25s ease;
+}
+
+.gallery-event-card:hover .gallery-event-card-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(5, 5, 5, 0.9) 0%,
+    rgba(5, 5, 5, 0.3) 60%,
+    transparent 100%
+  );
+}
+
+.gallery-event-card-title {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin-bottom: 0.3rem;
+}
+
+.gallery-event-card-meta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.gallery-event-card-date,
+.gallery-event-card-location,
+.gallery-event-card-count {
+  font-size: 0.72rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.gallery-event-card-location {
+  color: var(--base-color);
+  opacity: 0.9;
+}
+
+.gallery-event-card-count {
+  margin-left: auto;
+}
+
+/* ── Event detail page ────────────────────────────────────── */
+.gallery-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  text-decoration: none;
+  margin-bottom: 1.75rem;
+  transition: color 0.15s ease;
+}
+
+.gallery-back:hover {
+  color: var(--base-color);
+  text-decoration: none;
+}
+
+/* ── Masonry grid (event items) ───────────────────────────── */
+.gallery-grid {
+  columns: 3;
+  column-gap: 10px;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--surface-alt);
+  display: block;
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.04);
+}
+
+.gallery-item-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 5, 5, 0);
+  transition: background 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  background: rgba(5, 5, 5, 0.52);
+}
+
+.gallery-item-title {
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.2s ease 0.05s, transform 0.2s ease 0.05s;
+}
+
+.gallery-item:hover .gallery-item-title {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-item-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(5, 5, 5, 0.55);
+  padding: 3px 8px;
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.gallery-item:hover .gallery-item-badge {
+  opacity: 1;
+}
+
+/* Play button for videos */
+.gallery-play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  background: rgba(210, 109, 0, 0.82);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.gallery-item:hover .gallery-play-icon {
+  background: var(--base-color);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.gallery-play-icon::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 0 9px 17px;
+  border-color: transparent transparent transparent #fff;
+  margin-left: 4px;
+}
+
+/* Filter row on event page */
+.gallery-filter-row {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 1.5rem;
+}
+
+/* Empty state */
+.gallery-empty {
+  text-align: center;
+  color: var(--text-light);
+  padding: 4rem 0;
+  font-size: 0.95rem;
+}
+
+/* ── Lightbox ─────────────────────────────────────────────── */
+.lightbox-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 4, 4, 0.96);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: lb-fade-in 0.18s ease;
+}
+
+@keyframes lb-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.lightbox-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90vw;
+}
+
+.lightbox-media-photo {
+  max-width: 90vw;
+  max-height: 82vh;
+  object-fit: contain;
+  display: block;
+  animation: lb-slide-in 0.18s ease;
+}
+
+.lightbox-media-video {
+  max-width: 90vw;
+  width: 900px;
+  max-height: 82vh;
+  aspect-ratio: 16 / 9;
+  display: block;
+  background: #000;
+  animation: lb-slide-in 0.18s ease;
+}
+
+@keyframes lb-slide-in {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.lightbox-info {
+  margin-top: 0.85rem;
+  text-align: center;
+}
+
+.lightbox-title {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.lightbox-date {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.72rem;
+  margin-top: 0.2rem;
+  letter-spacing: 0.06em;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 1.1rem;
+  right: 1.4rem;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.15s ease;
+  z-index: 1001;
+}
+
+.lightbox-close:hover { color: #fff; }
+
+.lightbox-prev,
+.lightbox-next {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.9rem 1.1rem;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  z-index: 1001;
+  line-height: 1;
+}
+
+.lightbox-prev { left: 1rem; }
+.lightbox-next { right: 1rem; }
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.lightbox-prev:disabled,
+.lightbox-next:disabled {
+  opacity: 0.15;
+  cursor: default;
+}
+
+.lightbox-counter {
+  position: fixed;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255, 255, 255, 0.28);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .gallery-grid { columns: 2; }
+  .gallery-events-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid { columns: 1; }
+  .gallery-events-grid { grid-template-columns: 1fr; }
+  .lightbox-prev { left: 0.25rem; }
+  .lightbox-next { right: 0.25rem; }
+  .lightbox-prev, .lightbox-next { padding: 0.7rem 0.85rem; }
+}

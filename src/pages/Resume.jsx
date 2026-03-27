@@ -140,7 +140,7 @@ export function Resume() {
               <ul>
                 <li>
                   Designed and estimated costs for custom window constructions
-                  for the "Green House" hotel in Tyumen
+                  for the &ldquo;Green House&rdquo; hotel in Tyumen
                 </li>
                 <li>Performed quantitative and qualitative analysis of manufacturing and workforce efficiency</li>
                 <li>

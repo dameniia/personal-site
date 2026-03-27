@@ -6,6 +6,8 @@ import { About } from "./pages/About";
 import { Resume } from "./pages/Resume";
 import { Projects } from "./pages/Projects";
 import { PatchNotes } from "./pages/PatchNotes";
+import { Gallery } from "./pages/Gallery";
+import { GalleryEvent } from "./pages/GalleryEvent";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
             <Route path="/resume" element={<Resume />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/patch-notes" element={<PatchNotes />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/gallery/:eventId" element={<GalleryEvent />} />
           </Routes>
         </div>
         <Footer />

@@ -45,9 +45,10 @@
     },
     {
       "postId": 8,
-      "date": "March 19, 2026",
-      "title": "Gallery coming soon",
-      "body": "Added a Gallery entry to the navigation menu. The page is not yet live — it is marked as coming soon and will be enabled in a future update."
+      "date": "March 27, 2026",
+      "title": "Gallery page added (WIP)",
+      "body": "Added a new Gallery section for photos and videos, organized by event. Each event is its own album — click through to browse the full media grid with a lightbox viewer. Content is still being added.",
+      "link": "/gallery"
     }
   ],
   "projects": [

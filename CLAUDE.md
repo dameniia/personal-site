@@ -58,7 +58,12 @@ This structure is required by the CSS sticky footer implementation — do not ch
 
 **`src/data/db.json`** — patch notes history. The `patch-notes` array has entries with `postId`, `date`, `title`, `body`, and optional `link`.
 
-When adding a new project, add it to `projects.json`. When adding a patch note, add it to `db.json`.
+**`src/data/gallery.json`** — gallery media entries. Each entry has:
+- `id` (unique string), `type` (`"photo"` or `"video"`), `src` (full-res Cloudinary URL), `thumbnail` (smaller Cloudinary URL for grid), `title`, `date` (e.g. `"2025-06"`), `tags` (string array)
+- Videos also have `poster` (Cloudinary video thumbnail URL)
+- Cloudinary thumbnails are generated via URL params: append `w_600/` before the filename in the Cloudinary URL
+
+When adding a new project, add it to `projects.json`. When adding a patch note, add it to `db.json`. When adding gallery media, add it to `gallery.json`.
 
 ## CSS
 
@@ -101,4 +106,4 @@ Filtering is fully implemented. `Projects.jsx` derives unique tags from `project
 
 ## Deployment
 
-GitHub Actions workflow (`.github/workflows/deploy.yml`) deploys to Hostinger via FTP on push to `main`. The `public/.htaccess` contains Apache rewrite rules to redirect all requests to `index.html` for client-side routing to work correctly on the server.
+GitHub Actions workflow (`.github/workflows/deploy.yml`) deploys to Hostinger via FTP on push to `main`. The `public/.htaccess` contains Apache rewrite rules: requests to non-existent files and non-existent directories are rewritten to `index.html` for client-side routing. Existing directories (e.g. legacy static project pages under `public_html/projects/`) are intentionally excluded from the rewrite so they continue to be served as-is.
