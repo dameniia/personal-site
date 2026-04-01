@@ -1,0 +1,56 @@
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.article-card {
+  border-left: 4px solid var(--base-color);
+  background-color: var(--surface);
+  padding: 1.2em 1.5em;
+  box-shadow: 1px 2px 6px 2px rgba(96, 96, 96, 0.085);
+}
+
+.article-card-tags {
+  display: flex;
+  gap: 0.5em;
+  margin-bottom: 0.6em;
+}
+
+.article-tag {
+  font-size: 0.75em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--base-color);
+  background-color: rgba(210, 109, 0, 0.08);
+  padding: 0.2em 0.6em;
+  border-radius: 2px;
+}
+
+.article-title {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0 0 0.5em;
+}
+
+.article-description {
+  font-size: 0.95em;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0 0 0.75em;
+}
+
+.article-coming-soon {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid var(--border);
+  padding: 0.2em 0.6em;
+  border-radius: 2px;
+}
