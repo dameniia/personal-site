@@ -56,6 +56,13 @@
       "title": "Alaska Trip photos added to Gallery",
       "body": "Added the first real event to the Gallery — 11 photos from a November 2023 trip to Palmer, Talkeetna, and Anchorage, Alaska.",
       "link": "/gallery/alaska-trip-2023"
+    },
+    {
+      "postId": 10,
+      "date": "April 1, 2026",
+      "title": "Articles section added",
+      "body": "Added a new Articles section for writing on automation and engineering topics. Three articles are in the works: Strategy Pattern for Multi Country Support in Automation, Authenticated State in Automation, and Stabilizing Automation Tests with Network Beacons.",
+      "link": "/articles"
     }
   ],
   "projects": [
