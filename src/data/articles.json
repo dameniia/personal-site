@@ -12,5 +12,12 @@
     "description": "Approaches for managing authenticated state efficiently in automated test suites — from session reuse to token injection.",
     "date": null,
     "tags": ["Automation", "Testing"]
+  },
+  {
+    "id": "stabilizing-automation-tests-network-beacons",
+    "title": "Stabilizing Automation Tests with Network Beacons",
+    "description": "Using network beacons as synchronization points to eliminate flakiness caused by timing and race conditions in automated tests.",
+    "date": null,
+    "tags": ["Automation", "Testing"]
   }
 ]
