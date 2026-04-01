@@ -1,0 +1,16 @@
+[
+  {
+    "id": "strategy-pattern-multi-country-automation",
+    "title": "Strategy Pattern for Multi Country Support in Automation",
+    "description": "How to use the strategy pattern to handle country-specific logic in test automation frameworks without branching chaos.",
+    "date": null,
+    "tags": ["Automation", "Design Patterns"]
+  },
+  {
+    "id": "authenticated-state-in-automation",
+    "title": "Authenticated State in Automation",
+    "description": "Approaches for managing authenticated state efficiently in automated test suites — from session reuse to token injection.",
+    "date": null,
+    "tags": ["Automation", "Testing"]
+  }
+]
