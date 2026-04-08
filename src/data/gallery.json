@@ -21,8 +21,8 @@
       {
         "id": "IMG_0778",
         "type": "photo",
-        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650611/IMG_0778_ctxzpw.jpg",
-        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650611/IMG_0778_ctxzpw.jpg"
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1775619867/IMG_0778_ctxzpw.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1775619867/IMG_0778_ctxzpw.jpg"
       },
       {
         "id": "IMG_0816",
@@ -47,6 +47,12 @@
         "type": "photo",
         "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1774650611/IMG_0888_cnxhyo.jpg",
         "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1774650611/IMG_0888_cnxhyo.jpg"
+      },
+      {
+        "id": "IMG_0904",
+        "type": "photo",
+        "src": "https://res.cloudinary.com/dvhlgdwdh/image/upload/v1775619881/IMG_0904_trusme.jpg",
+        "thumbnail": "https://res.cloudinary.com/dvhlgdwdh/image/upload/w_600/v1775619881/IMG_0904_trusme.jpg"
       },
       {
         "id": "IMG_0907",
