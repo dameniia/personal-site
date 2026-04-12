@@ -30,10 +30,10 @@ export function Resume() {
           <p className="resume-section-title">Summary</p>
           <div className="resume-summary">
             <ul>
-              <li>Lead Quality Assurance Analyst and Automation Engineer with 7+ years delivering high-quality products in e-commerce, leading teams of 4–7 QA Engineers</li>
-              <li>Reduced production defect rates by 50% and cut regression cycles from 5 days to 3 hours by automating full regression suites with Cypress and Playwright</li>
-              <li>Enabling CI/CD with reliable automated end-to-end tests integrated into GitLab pipelines; prevented at least 5 major severity issues in the last year</li>
-              <li>Initiated Accessibility testing and proactive quality processes that empowered Product teams to resolve multimillion-dollar issues</li>
+              <li>Lead Quality Assurance Analyst and Automation Engineer with <strong>7+ years</strong> delivering high-quality products in e-commerce, leading teams of <strong>4–7 QA Engineers</strong></li>
+              <li>Reduced production defect rates by <strong>50%</strong> and cut regression cycles from <strong>5 days to 3 hours</strong> by automating full regression suites with Cypress and Playwright</li>
+              <li>Enabling CI/CD with reliable automated end-to-end tests integrated into GitLab pipelines; prevented at least <strong>5 major severity issues</strong> in the last year</li>
+              <li>Initiated <strong>Accessibility testing</strong> and proactive quality processes that empowered Product teams to resolve <strong>multimillion-dollar issues</strong></li>
               <li>Strong analytical skills using Quantum Metrics, Adobe Analytics, Splunk, and Sentry</li>
               <li>Associate&apos;s Degree in Computer Science; Bachelor&apos;s in Economics &amp; Management with 4 years of business experience</li>
               <li>4.5+ years as a designer and economist in construction</li>
@@ -73,11 +73,12 @@ export function Resume() {
               <p className="resume-entry-company">Lululemon USA Inc. — Seattle, WA</p>
               <p className="resume-entry-role">Lead Quality Assurance Analyst, AI and Automation Engineer</p>
               <ul>
-                <li>Driving AI innovation in QE space (Copilot and Claude Code) — building e2e tests with MCPs reducing development effort from hours to minutes</li>
-                <li>Ensured alignment with the company&apos;s best quality practices and reduced production defect rate by 50%</li>
-                <li>Enhanced PREPROD E2E automation coverage and integrated PROD E2E tests into CI/CD GitLab pipeline, preventing at least 5 major severity issues in the last year</li>
-                <li>Achieved 92.5% automation coverage of regression suite and 98.6% of smoke test suite with Cypress automation</li>
-                <li>Prepared proof of concept and cost saving analysis for migrating from Cypress to Playwright, leveraging AI for its delivery</li>
+                <li>Driving <strong>AI innovation</strong> in QE space (Copilot and Claude Code) — building e2e tests with MCPs reducing development effort from <strong>hours to minutes</strong></li>
+                <li>Created <strong>AI sub-agents</strong> that allow QEs to create test cases based on Jira requirements and update the test case management tool with new test plans and test runs within minutes</li>
+                <li>Ensured alignment with the company&apos;s best quality practices and reduced production defect rate by <strong>50%</strong></li>
+                <li>Enhanced PREPROD E2E automation coverage and integrated PROD E2E tests into <strong>CI/CD GitLab pipeline</strong>, preventing at least <strong>5 major severity issues</strong> in the last year</li>
+                <li>Achieved <strong>92.5%</strong> automation coverage of regression suite and <strong>98.6%</strong> of smoke test suite with Cypress automation</li>
+                <li>Prepared proof of concept and cost saving analysis for migrating from <strong>Cypress to Playwright</strong>, leveraging AI for its delivery</li>
               </ul>
             </div>
             <span className="resume-entry-dates">Mar 2023 – present</span>
@@ -107,7 +108,7 @@ export function Resume() {
                 <li>Safeguarded core business deliverables while ensuring guest satisfaction</li>
                 <li>
                   Introduced automation into QA processes, building smoke and
-                  regression test suites from the ground up
+                  regression test suites <strong>from the ground up</strong>
                 </li>
               </ul>
             </div>

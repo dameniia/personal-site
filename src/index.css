@@ -431,6 +431,12 @@ a:hover {
   list-style: disc;
 }
 
+.resume-entry li strong,
+.resume-summary li strong {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
 @media (max-width: 600px) {
   .resume-entry {
     flex-direction: column;
