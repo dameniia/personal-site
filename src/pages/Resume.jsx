@@ -11,6 +11,16 @@ export function Resume() {
       <div className="container content">
         <div className="resume-flex">
 
+          <div className="resume-download-row">
+            <a
+              href="/resume/Andrei_Dameniia_Resume.pdf"
+              download="Andrei_Dameniia_Resume.pdf"
+              className="resume-download-btn"
+            >
+              ↓ Download PDF
+            </a>
+          </div>
+
           <div className="resume-contacts">
             <span>(323) 984-14-56</span>
             <span>adameniia@gmail.com</span>

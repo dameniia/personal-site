@@ -281,6 +281,34 @@ a:hover {
 }
 
 /* ── Resume ───────────────────────────────────────────────── */
+.resume-download-row {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.75rem 0 0.5rem;
+}
+
+.resume-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--base-color);
+  border: 1.5px solid var(--base-color);
+  padding: 0.45rem 1rem;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.resume-download-btn:hover {
+  background: var(--base-color);
+  color: #fff;
+  text-decoration: none;
+}
+
 .resume-flex {
   display: flex;
   flex-direction: column;
