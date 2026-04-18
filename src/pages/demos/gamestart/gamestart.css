@@ -1,0 +1,493 @@
+/* gamestart.css — Game Start demo shop (standalone, no portfolio Nav/Footer) */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* ── Root scope: override global * reset inside this page ── */
+.gs-page {
+  min-height: 100vh;
+  background-color: #0d0d14;
+  display: flex;
+  flex-direction: column;
+}
+
+/* All text inside the demo defaults to light */
+.gs-page,
+.gs-page * {
+  color: inherit;
+}
+
+/* ── Header ─────────────────────────────────────────────── */
+.gs-header {
+  background: #09090f;
+  border-bottom: 2px solid #00ff88;
+  padding: 0 2rem;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  flex-shrink: 0;
+}
+
+.gs-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.gs-logo-icon {
+  color: #00ff88;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.gs-logo-text {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.75rem;
+  color: #00ff88;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.gs-topnav {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.gs-topnav span {
+  color: #707088;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.15s;
+  font-weight: 600;
+}
+
+.gs-topnav span:hover {
+  color: #c0c0d8;
+}
+
+.gs-header-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gs-cart-count {
+  color: #00ff88;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+/* ── Main content ───────────────────────────────────────── */
+.gs-main {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  flex: 1;
+}
+
+.gs-breadcrumb {
+  font-size: 0.72rem;
+  color: #404058;
+  letter-spacing: 0.06em;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.gs-breadcrumb span {
+  color: #404058;
+}
+
+.gs-breadcrumb .gs-breadcrumb-sep {
+  margin: 0 0.4rem;
+  color: #2a2a3a;
+}
+
+.gs-breadcrumb span:last-child {
+  color: #808098;
+}
+
+.gs-page-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f0f0ff;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+/* ── Two-column layout ──────────────────────────────────── */
+.gs-layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+/* ── Cart panel ─────────────────────────────────────────── */
+.gs-cart {
+  background: #11111c;
+  border: 1px solid #1c1c2e;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gs-cart-header-row {
+  display: grid;
+  grid-template-columns: 1fr 90px 130px 100px 44px;
+  padding: 0.65rem 1.25rem;
+  background: #0d0d18;
+  border-bottom: 1px solid #1c1c2e;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #454560;
+  font-weight: 700;
+}
+
+.gs-cart-item {
+  display: grid;
+  grid-template-columns: 1fr 90px 130px 100px 44px;
+  align-items: center;
+  padding: 1.1rem 1.25rem;
+  border-bottom: 1px solid #18182a;
+  transition: background 0.12s;
+}
+
+.gs-cart-item:last-child {
+  border-bottom: none;
+}
+
+.gs-cart-item:hover {
+  background: #14142a;
+}
+
+/* Item info cell */
+.gs-item-info {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.gs-item-thumb {
+  width: 60px;
+  height: 80px;
+  background: #1a1a2e;
+  border: 1px solid #252540;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.gs-item-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.gs-item-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #dcdcf0;
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+
+.gs-item-platform {
+  font-size: 0.68rem;
+  color: #454560;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Price cells */
+.gs-item-price {
+  font-size: 0.9rem;
+  color: #9090a8;
+  font-weight: 500;
+}
+
+.gs-item-line-total {
+  font-size: 0.95rem;
+  color: #dcdcf0;
+  font-weight: 700;
+}
+
+/* ── Qty stepper ────────────────────────────────────────── */
+.gs-qty-stepper {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #252540;
+  border-radius: 4px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.gs-qty-btn {
+  background: #181830;
+  border: none;
+  color: #00ff88;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.12s;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+.gs-qty-btn:hover {
+  background: #22223c;
+}
+
+.gs-qty-btn:disabled {
+  color: #303048;
+  cursor: default;
+}
+
+.gs-qty-btn:disabled:hover {
+  background: #181830;
+}
+
+.gs-qty-value {
+  min-width: 28px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #dcdcf0;
+  font-weight: 700;
+  background: #11111c;
+  padding: 0.1rem 0;
+  display: block;
+  line-height: 28px;
+}
+
+/* ── Remove button ──────────────────────────────────────── */
+.gs-remove-btn {
+  background: none;
+  border: none;
+  color: #303048;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.15s;
+  line-height: 1;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  border-radius: 4px;
+}
+
+.gs-remove-btn:hover {
+  color: #ff4466;
+  background: rgba(255, 68, 102, 0.08);
+}
+
+/* ── Empty cart ─────────────────────────────────────────── */
+.gs-empty {
+  padding: 3.5rem 2rem;
+  text-align: center;
+  color: #404058;
+}
+
+.gs-empty p {
+  font-size: 0.95rem;
+  color: #404058;
+  letter-spacing: 0.04em;
+}
+
+/* ── Order summary sidebar ──────────────────────────────── */
+.gs-summary {
+  background: #11111c;
+  border: 1px solid #1c1c2e;
+  border-radius: 8px;
+  padding: 1.4rem;
+  position: sticky;
+  top: 76px;
+}
+
+.gs-summary-title {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #505068;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.gs-summary-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 0.85rem;
+}
+
+.gs-summary-label {
+  color: #606078;
+}
+
+.gs-summary-value {
+  color: #b0b0c8;
+  font-weight: 500;
+}
+
+.gs-free {
+  color: #00ff88 !important;
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.gs-summary-divider {
+  height: 1px;
+  background: #1c1c2e;
+  margin: 1rem 0;
+}
+
+.gs-summary-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.3rem;
+}
+
+.gs-summary-total-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #c0c0d8;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.gs-summary-total-value {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f0f0ff;
+}
+
+/* ── Checkout button ────────────────────────────────────── */
+.gs-checkout-btn {
+  width: 100%;
+  background: #00ff88;
+  color: #080810;
+  border: none;
+  padding: 0.85rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+  font-family: inherit;
+  box-shadow: 0 0 0 rgba(0, 255, 136, 0);
+}
+
+.gs-checkout-btn:hover {
+  background: #00e87a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(0, 255, 136, 0.25);
+}
+
+.gs-checkout-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.gs-secure-note {
+  text-align: center;
+  font-size: 0.68rem;
+  color: #383850;
+  margin-top: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
+/* ── Footer ─────────────────────────────────────────────── */
+.gs-footer {
+  border-top: 1px solid #14141e;
+  padding: 1.25rem 2rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.gs-footer p {
+  font-size: 0.7rem;
+  color: #282838;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .gs-header {
+    padding: 0 1rem;
+  }
+
+  .gs-topnav {
+    display: none;
+  }
+
+  .gs-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .gs-summary {
+    position: static;
+  }
+
+  .gs-cart-header-row {
+    display: none;
+  }
+
+  .gs-cart-item {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 0.75rem 0.5rem;
+    padding: 1rem;
+  }
+
+  .gs-item-info {
+    grid-column: 1 / -1;
+  }
+
+  .gs-item-price {
+    display: none; /* line total covers it on mobile */
+  }
+
+  .gs-qty-stepper {
+    justify-self: start;
+  }
+
+  .gs-item-line-total {
+    justify-self: end;
+    align-self: center;
+  }
+
+  .gs-remove-btn {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    justify-self: end;
+  }
+
+  .gs-page-title {
+    font-size: 1.2rem;
+  }
+}
