@@ -49,7 +49,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 40px 80px;
+  padding: 80px 40px 60px;
   overflow: hidden;
 }
 
@@ -110,7 +110,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #3a9bff;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   font-weight: 500;
 }
 
@@ -121,7 +121,8 @@
   font-weight: 700;
   letter-spacing: -1.5px;
   line-height: 1.1;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
 /* ── Hero ── */
@@ -138,12 +139,13 @@
   letter-spacing: -2px;
   line-height: 1;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .np-hero-tagline {
   font-size: 20px;
   color: #666;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   font-weight: 400;
 }
 
@@ -226,14 +228,14 @@
 .np-feature-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 16px;
 }
 
 .np-feature-card {
   background: #0f0f0f;
   border: 1px solid #1e1e1e;
   border-radius: 16px;
-  padding: 32px;
+  padding: 24px;
 }
 
 .np-feature-icon {
@@ -258,8 +260,8 @@
 .np-screenshots-sub {
   font-size: 15px;
   color: #444;
-  margin-bottom: 48px;
-  margin-top: -16px;
+  margin-bottom: 32px;
+  margin-top: -8px;
 }
 
 .np-screenshot-row {
@@ -334,8 +336,8 @@
 .np-status-sub {
   font-size: 16px;
   color: #555;
-  margin-bottom: 48px;
-  margin-top: -16px;
+  margin-bottom: 32px;
+  margin-top: -8px;
 }
 
 .np-phase-list {
@@ -405,7 +407,7 @@
 @media (max-width: 768px) {
   .np-nav { padding: 12px 20px; }
 
-  .np-section { padding: 100px 24px 60px; }
+  .np-section { padding: 72px 24px 48px; }
 
   .np-hero-heading {
     font-size: 40px;
