@@ -30,7 +30,7 @@ export function Resume() {
           <p className="resume-section-title">Summary</p>
           <div className="resume-summary">
             <ul>
-              <li>Lead Quality Assurance Analyst and Automation Engineer with <strong>7+ years</strong> delivering high-quality products in e-commerce, leading teams of <strong>4–7 QA Engineers</strong></li>
+              <li>Lead Quality Assurance Analyst and Automation Engineer with <strong>8+ years</strong> delivering high-quality products in e-commerce, leading teams of <strong>4–7 QA Engineers</strong></li>
               <li>Reduced production defect rates by <strong>50%</strong> and cut regression cycles from <strong>5 days to 3 hours</strong> by automating full regression suites with Cypress and Playwright</li>
               <li>Enabling CI/CD with reliable automated end-to-end tests integrated into GitLab pipelines; prevented at least <strong>5 major severity issues</strong> in the last year</li>
               <li>Initiated <strong>Accessibility testing</strong> and proactive quality processes that empowered Product teams to resolve <strong>multimillion-dollar issues</strong></li>

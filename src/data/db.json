@@ -70,6 +70,12 @@
       "title": "Game Start demo shop added",
       "body": "Added a standalone e-commerce demo page at /demos/gamestart/shop/mybag — a retro-themed mock cart for a fictional game retailer called Game Start. Pre-loaded with three titles, it supports quantity steppers, item removal, and a live-updating order summary. Built as a Playwright automation target with full data-testid coverage.",
       "link": "/demos/gamestart/shop/mybag"
+    },
+    {
+      "postId": 12,
+      "date": "May 15, 2026",
+      "title": "Site polish: hero CTA, stack badges, footer & nav updates",
+      "body": "Several UX improvements: homepage hero now shows a tech stack badge row (Playwright, Cypress, TypeScript, Python, GitLab CI), a View Résumé CTA, and an updated tagline. Footer email is now a clickable mailto link; Facebook replaced with GitHub and GitLab. Articles nav item hidden until content is ready. Experience year count standardised to 8+ across all pages."
     }
   ],
   "projects": [

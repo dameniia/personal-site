@@ -9,8 +9,19 @@ export function Home() {
     <>
       <header className="hero-header">
         <div className="hero-inner">
-          <p className="hero-eyebrow">Lead QA · SDET · Builder</p>
+          <p className="hero-eyebrow">Lead QA · SDET · Playwright &amp; Cypress</p>
           <h1 className="hero-name">Andrei Dameniia</h1>
+          <div className="hero-stack">
+            <span className="hero-stack-badge">Playwright</span>
+            <span className="hero-stack-badge">Cypress</span>
+            <span className="hero-stack-badge">TypeScript</span>
+            <span className="hero-stack-badge">Python</span>
+            <span className="hero-stack-badge">GitLab CI</span>
+          </div>
+          <div className="hero-cta-row">
+            <Link to="/resume" className="hero-cta-btn">View Résumé</Link>
+            <a href="mailto:adameniia@gmail.com" className="hero-cta-btn hero-cta-btn--ghost">Contact me</a>
+          </div>
         </div>
       </header>
 
@@ -19,7 +30,7 @@ export function Home() {
           <div className="home-intro-text">
             <p>
               Hey, I&apos;m <strong>Andrei</strong> — a Lead QA Analyst and
-              SDET with 7+ years in e-commerce, currently at Lululemon. I
+              SDET with 8+ years in e-commerce, currently at Lululemon. I
               spend my days building reliable test automation, driving quality
               across engineering teams, and making sure great software actually
               ships.
