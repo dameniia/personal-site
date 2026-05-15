@@ -15,17 +15,17 @@ export function Home() {
             <span className="hero-stack-badge">Playwright</span>
             <span className="hero-stack-badge">Cypress</span>
             <span className="hero-stack-badge">TypeScript</span>
-            <span className="hero-stack-badge">Python</span>
+            <span className="hero-stack-badge">JavaScript</span>
             <span className="hero-stack-badge">GitLab CI</span>
-          </div>
-          <div className="hero-cta-row">
-            <Link to="/resume" className="hero-cta-btn">View Résumé</Link>
-            <a href="mailto:adameniia@gmail.com" className="hero-cta-btn hero-cta-btn--ghost">Contact me</a>
           </div>
         </div>
       </header>
 
       <section className="container content">
+        <div className="hero-cta-row">
+          <Link to="/resume" className="hero-cta-btn">View Résumé</Link>
+          <a href="mailto:adameniia@gmail.com" className="hero-cta-btn hero-cta-btn--ghost">Contact me</a>
+        </div>
         <div className="home-intro">
           <div className="home-intro-text">
             <p>
