@@ -9,6 +9,7 @@ const navItems = [
   { path: "/resume", label: "Resume" },
   { path: "/patch-notes", label: "Patch Notes" },
   { path: "/gallery", label: "Gallery" },
+  { path: "/noplan", label: "no-plan" },
 ];
 
 export function Nav() {

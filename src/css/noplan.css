@@ -1,0 +1,433 @@
+/* ── Root ── */
+.np-root {
+  background: #000;
+  color: #fff;
+  font-family: -apple-system, system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+/* ── Mini nav ── */
+.np-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.np-nav-logo {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.np-nav-back {
+  font-size: 12px;
+  color: #555;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  transition: color 0.2s;
+}
+
+.np-nav-back:hover {
+  color: #999;
+}
+
+/* ── Section base ── */
+.np-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 40px 80px;
+  overflow: hidden;
+}
+
+.np-hero       { background: #000; }
+.np-vision     { background: #080808; }
+.np-features   { background: #000; }
+.np-screenshots { background: #050505; }
+.np-tech       { background: #000; }
+.np-status     { background: #050505; }
+
+/* ── Parallax background layer ── */
+.np-parallax-bg {
+  position: absolute;
+  inset: -30% 0;
+  transform: translateY(var(--parallax-offset, 0px));
+  will-change: transform;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.np-hero .np-parallax-bg {
+  background: radial-gradient(ellipse 80% 50% at 50% 50%, rgba(58, 155, 255, 0.06) 0%, transparent 70%);
+}
+.np-vision .np-parallax-bg {
+  background: radial-gradient(ellipse 60% 40% at 30% 60%, rgba(58, 155, 255, 0.03) 0%, transparent 70%);
+}
+.np-features .np-parallax-bg {
+  background: radial-gradient(ellipse 60% 40% at 70% 40%, rgba(58, 155, 255, 0.04) 0%, transparent 70%);
+}
+.np-screenshots .np-parallax-bg {
+  background: radial-gradient(ellipse 80% 40% at 50% 70%, rgba(58, 155, 255, 0.03) 0%, transparent 70%);
+}
+.np-tech .np-parallax-bg {
+  background: radial-gradient(ellipse 60% 50% at 20% 50%, rgba(58, 155, 255, 0.04) 0%, transparent 70%);
+}
+.np-status .np-parallax-bg {
+  background: radial-gradient(ellipse 70% 50% at 50% 30%, rgba(58, 155, 255, 0.05) 0%, transparent 70%);
+}
+
+/* ── Inner content (above parallax bg) ── */
+.np-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 860px;
+  width: 100%;
+}
+
+.np-inner--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ── Shared text ── */
+.np-eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #3a9bff;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.np-accent { color: #3a9bff; }
+
+.np-section-heading {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  margin-bottom: 28px;
+}
+
+/* ── Hero ── */
+.np-hero .np-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.np-hero-heading {
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.np-hero-tagline {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+
+/* Phone mockups */
+.np-phone-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.np-phone {
+  width: 130px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #111;
+}
+
+.np-phone--center {
+  width: 160px;
+  transform: translateY(-20px);
+  border-color: rgba(58, 155, 255, 0.4);
+}
+
+.np-phone-screen {
+  height: 260px;
+  background: linear-gradient(160deg, #111 0%, #0a0a0a 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.np-phone--center .np-phone-screen {
+  height: 320px;
+}
+
+.np-line {
+  height: 8px;
+  background: #222;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.np-line--blue {
+  background: rgba(58, 155, 255, 0.3);
+  width: 50%;
+}
+
+.np-line--short { width: 40%; }
+
+.np-phone-home {
+  height: 4px;
+  background: #222;
+  width: 30%;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* ── Vision ── */
+.np-body {
+  font-size: 20px;
+  color: #666;
+  line-height: 1.7;
+  max-width: 620px;
+  margin-bottom: 20px;
+}
+
+.np-body:last-child { margin-bottom: 0; }
+
+.np-body strong {
+  color: #ccc;
+  font-weight: 500;
+}
+
+/* ── Features ── */
+.np-feature-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.np-feature-card {
+  background: #0f0f0f;
+  border: 1px solid #1e1e1e;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.np-feature-icon {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.np-feature-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.np-feature-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ── Screenshots ── */
+.np-screenshots-sub {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 48px;
+  margin-top: -16px;
+}
+
+.np-screenshot-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 12px;
+  scrollbar-width: none;
+}
+
+.np-screenshot-row::-webkit-scrollbar { display: none; }
+
+.np-screenshot-slot {
+  min-width: 160px;
+  height: 300px;
+  border-radius: 20px;
+  background: #111;
+  border: 1px dashed #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.np-screenshot-slot span {
+  font-size: 10px;
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ── Tech ── */
+.np-tech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.np-tech-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.np-tech-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3a9bff;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.np-tech-item h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+.np-tech-item p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ── Status ── */
+.np-status-sub {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 48px;
+  margin-top: -16px;
+}
+
+.np-phase-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 560px;
+  text-align: left;
+}
+
+.np-phase {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid #111;
+}
+
+.np-phase:last-child { border-bottom: none; }
+
+.np-phase-num {
+  font-size: 11px;
+  color: #333;
+  letter-spacing: 1px;
+  width: 24px;
+  flex-shrink: 0;
+}
+
+.np-phase-label {
+  font-size: 15px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.np-phase-label--done     { color: #3a9bff; }
+.np-phase-label--active   { color: #fff; }
+.np-phase-label--upcoming { color: #333; }
+
+.np-phase-badge {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.np-phase-badge--done {
+  background: rgba(58, 155, 255, 0.1);
+  color: #3a9bff;
+  border: 1px solid rgba(58, 155, 255, 0.2);
+}
+
+.np-phase-badge--active {
+  background: rgba(255, 255, 255, 0.06);
+  color: #888;
+  border: 1px solid #222;
+}
+
+.np-phase-badge--upcoming {
+  color: #2a2a2a;
+  border: 1px solid #1a1a1a;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .np-nav { padding: 12px 20px; }
+
+  .np-section { padding: 100px 24px 60px; }
+
+  .np-hero-heading {
+    font-size: 40px;
+    letter-spacing: -1px;
+  }
+
+  .np-hero-tagline { font-size: 16px; }
+
+  /* Show only center phone on mobile */
+  .np-phone-row .np-phone:not(.np-phone--center) { display: none; }
+  .np-phone--center { transform: none; }
+
+  .np-section-heading {
+    font-size: 32px;
+    letter-spacing: -0.5px;
+  }
+
+  .np-body { font-size: 17px; }
+
+  .np-feature-grid  { grid-template-columns: 1fr; }
+  .np-tech-grid     { grid-template-columns: 1fr; }
+
+  /* Disable parallax on mobile — causes jank on iOS Safari */
+  .np-parallax-bg { transform: none !important; }
+}
