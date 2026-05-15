@@ -76,6 +76,13 @@
       "date": "May 15, 2026",
       "title": "Site polish: hero CTA, stack badges, footer & nav updates",
       "body": "Several UX improvements: homepage hero now shows a tech stack badge row (Playwright, Cypress, TypeScript, Python, GitLab CI), a View Résumé CTA, and an updated tagline. Footer email is now a clickable mailto link; Facebook replaced with GitHub and GitLab. Articles nav item hidden until content is ready. Experience year count standardised to 8+ across all pages."
+    },
+    {
+      "postId": 13,
+      "date": "May 15, 2026",
+      "title": "no-plan app page added",
+      "body": "Added a dedicated product page for the no-plan fitness app — the most ambitious project on the site. Six full-bleed sections: vision, features, screenshots, tech stack, and live development roadmap.",
+      "link": "/noplan"
     }
   ],
   "projects": [
