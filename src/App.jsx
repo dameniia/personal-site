@@ -10,6 +10,7 @@ import { Articles } from "./pages/Articles";
 import { Gallery } from "./pages/Gallery";
 import { GalleryEvent } from "./pages/GalleryEvent";
 import { MyBag } from "./pages/demos/gamestart/MyBag";
+import { NoPlan } from "./pages/NoPlan";
 
 // Shared layout for all portfolio pages — Nav + sticky-footer wrapper required by CSS
 function PortfolioLayout() {
@@ -42,6 +43,8 @@ function App() {
 
         {/* Demo routes — standalone pages, no portfolio Nav or Footer */}
         <Route path="/demos/gamestart/shop/mybag" element={<MyBag />} />
+        {/* no-plan — standalone product page, no portfolio Nav or Footer */}
+        <Route path="/noplan" element={<NoPlan />} />
       </Routes>
     </BrowserRouter>
   );
