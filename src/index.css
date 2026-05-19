@@ -503,6 +503,22 @@ a:hover {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  .home-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-photo {
+    order: -1;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-photo img {
+    max-width: 169px;
+  }
+}
+
 @media (max-width: 600px) {
   .resume-entry {
     flex-direction: column;
