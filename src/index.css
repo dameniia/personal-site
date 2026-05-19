@@ -124,7 +124,7 @@ a:hover {
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 40px));
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 40px));
-  padding: 4rem 1.5rem 5.5rem;
+  padding: 3.5rem 1.5rem 4.8rem;
 }
 
 .hero-inner {
@@ -155,7 +155,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero-stack-badge {
@@ -211,10 +211,10 @@ a:hover {
 
 /* ── Home intro ───────────────────────────────────────────── */
 .home-intro {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   gap: 3.5rem;
-  align-items: flex-start;
-  flex-wrap: wrap-reverse;
+  align-items: start;
   padding: 0.5rem 0;
 }
 
@@ -247,8 +247,15 @@ a:hover {
   text-decoration: none;
 }
 
+.home-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+}
+
 .profile-photo {
-  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .home-patch-note {
