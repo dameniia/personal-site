@@ -22,10 +22,6 @@ export function Home() {
       </header>
 
       <section className="container content">
-        <div className="hero-cta-row">
-          <Link to="/resume" className="hero-cta-btn">View Résumé</Link>
-          <a href="mailto:adameniia@gmail.com" className="hero-cta-btn hero-cta-btn--ghost">Contact me</a>
-        </div>
         <div className="home-intro">
           <div className="home-intro-text">
             <p>
@@ -41,8 +37,10 @@ export function Home() {
               I&apos;m also slowly learning photography — still chasing the
               perfect light.
             </p>
-            <p>
+            <p className="home-links">
               <Link to="/projects">Browse my projects →</Link>
+              <Link to="/resume">View Résumé →</Link>
+              <a href="mailto:adameniia@gmail.com">Contact me →</a>
             </p>
             <p className="home-patch-note">
               <span>Site update: </span>
