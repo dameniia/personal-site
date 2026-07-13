@@ -22,7 +22,6 @@ export function Resume() {
           </div>
 
           <div className="resume-contacts">
-            <span>(323) 984-14-56</span>
             <span>adameniia@gmail.com</span>
           </div>
 
