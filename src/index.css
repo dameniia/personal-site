@@ -758,6 +758,7 @@ footer {
   margin-left: -1.25rem;
   transform: translateX(-40%);
   z-index: 3;
+  background: transparent;
 }
 
 .phone-frame--watch img {
