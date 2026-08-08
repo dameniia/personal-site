@@ -14,6 +14,40 @@ export function Home() {
         </div>
       </header>
 
+      <section className="container current-project-section">
+        <div className="current-project-card">
+          <span className="current-project-eyebrow">Currently building</span>
+          <div className="current-project-inner">
+            <div className="current-project-left">
+              <div className="current-project-identity">
+                <figure className="current-project-icon">
+                  <img src="/images/noplan-icon.png" alt="no-plan-app icon" width="56" height="56" />
+                </figure>
+                <h2 className="current-project-name">no-plan-app</h2>
+              </div>
+              <p className="current-project-desc">
+                Minimal-distraction fitness tracking that encourages building
+                plans on the fly with AI. Scan equipment and get a suggested
+                workout instantly — no noise, no quizzes, no accounts.
+              </p>
+              <p className="current-project-stack">Swift · iOS · HealthKit · Claude AI</p>
+              <a href="/projects" className="current-project-link">View project →</a>
+            </div>
+            <div className="current-project-phones">
+              <figure className="phone-frame">
+                <img src="https://res.cloudinary.com/dvhlgdwdh/image/upload/w_400/pre_upload_wzjjxy.png" alt="no-plan-app: upload equipment photo" width="148" />
+              </figure>
+              <figure className="phone-frame phone-frame--offset">
+                <img src="https://res.cloudinary.com/dvhlgdwdh/image/upload/w_400/post_upload_rzqu4c.png" alt="no-plan-app: AI suggested exercises" width="148" />
+              </figure>
+              <figure className="phone-frame phone-frame--watch">
+                <img src="https://res.cloudinary.com/dvhlgdwdh/image/upload/w_400/iWatch_a67uiw.png" alt="no-plan-app: iWatch tracker" width="100" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="container content">
         <div className="home-intro">
           <div className="home-intro-text">

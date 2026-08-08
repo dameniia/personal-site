@@ -1,0 +1,90 @@
+<svg width="390" height="844" viewBox="0 0 390 844" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="scanGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00D26A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00D26A" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00D26A" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="viewfinder">
+      <rect x="20" y="118" width="350" height="390" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="390" height="844" fill="#000"/>
+
+  <!-- Status bar -->
+  <text x="24" y="56" fill="white" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="15" font-weight="600">9:41</text>
+  <!-- Signal dots -->
+  <circle cx="334" cy="50" r="2.5" fill="white"/>
+  <circle cx="342" cy="50" r="2.5" fill="white"/>
+  <circle cx="350" cy="50" r="2.5" fill="white"/>
+  <!-- Battery -->
+  <rect x="358" y="44" width="24" height="12" rx="3" fill="none" stroke="white" stroke-width="1.5"/>
+  <rect x="382" y="47" width="2.5" height="6" rx="1" fill="white" opacity="0.5"/>
+  <rect x="359.5" y="45.5" width="18" height="9" rx="2" fill="white"/>
+
+  <!-- Nav bar -->
+  <text x="24" y="100" fill="#D26D00" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="17">‹</text>
+  <text x="32" y="100" fill="#D26D00" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="17"> Back</text>
+  <text x="195" y="100" fill="white" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="17" font-weight="600" text-anchor="middle">Scan Equipment</text>
+
+  <!-- Camera viewfinder -->
+  <rect x="20" y="118" width="350" height="390" rx="14" fill="#111"/>
+
+  <!-- Simulated blurry gym background lines -->
+  <rect x="20" y="118" width="350" height="390" rx="14" fill="#0a0a0a" clip-path="url(#viewfinder)"/>
+  <line x1="20" y1="200" x2="370" y2="240" stroke="#1a1a1a" stroke-width="30"/>
+  <line x1="20" y1="300" x2="370" y2="350" stroke="#181818" stroke-width="40"/>
+  <line x1="20" y1="420" x2="370" y2="460" stroke="#161616" stroke-width="30"/>
+
+  <!-- Corner brackets -->
+  <path d="M55 148 L40 148 L40 163" fill="none" stroke="#00D26A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M335 148 L350 148 L350 163" fill="none" stroke="#00D26A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M55 478 L40 478 L40 463" fill="none" stroke="#00D26A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M335 478 L350 478 L350 463" fill="none" stroke="#00D26A" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Scan sweep line -->
+  <rect x="20" y="278" width="350" height="44" fill="url(#scanGlow)"/>
+  <line x1="20" y1="300" x2="370" y2="300" stroke="#00D26A" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Detection box — Dumbbells -->
+  <rect x="52" y="170" width="132" height="88" rx="4" fill="none" stroke="#00D26A" stroke-width="2"/>
+  <!-- Label pill -->
+  <rect x="52" y="162" width="86" height="20" rx="4" fill="#00D26A"/>
+  <text x="95" y="176" fill="#000" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Dumbbells</text>
+
+  <!-- Detection box — Bench -->
+  <rect x="196" y="360" width="150" height="108" rx="4" fill="none" stroke="#FFD60A" stroke-width="2"/>
+  <!-- Label pill -->
+  <rect x="196" y="352" width="54" height="20" rx="4" fill="#FFD60A"/>
+  <text x="223" y="366" fill="#000" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Bench</text>
+
+  <!-- Bottom sheet -->
+  <rect x="0" y="524" width="390" height="296" rx="0" fill="#1C1C1E"/>
+  <!-- Pill handle -->
+  <rect x="168" y="534" width="54" height="5" rx="2.5" fill="#48484A"/>
+
+  <text x="24" y="578" fill="white" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="20" font-weight="700">Equipment found</text>
+
+  <!-- Item row 1 -->
+  <rect x="24" y="594" width="342" height="54" rx="12" fill="#2C2C2E"/>
+  <circle cx="51" cy="621" r="13" fill="#00D26A"/>
+  <text x="51" y="626" fill="#000" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="14" font-weight="800" text-anchor="middle">✓</text>
+  <text x="72" y="617" fill="white" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="15" font-weight="600">Dumbbells</text>
+  <text x="72" y="636" fill="#8E8E93" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="13">Adjustable, detected ×2</text>
+
+  <!-- Item row 2 -->
+  <rect x="24" y="656" width="342" height="54" rx="12" fill="#2C2C2E"/>
+  <circle cx="51" cy="683" r="13" fill="#FFD60A"/>
+  <text x="51" y="688" fill="#000" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="14" font-weight="800" text-anchor="middle">✓</text>
+  <text x="72" y="679" fill="white" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="15" font-weight="600">Flat Bench</text>
+  <text x="72" y="698" fill="#8E8E93" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="13">Standard, detected ×1</text>
+
+  <!-- CTA button -->
+  <rect x="24" y="724" width="342" height="52" rx="14" fill="#D26D00"/>
+  <text x="195" y="755" fill="white" font-family="-apple-system, Helvetica Neue, sans-serif" font-size="17" font-weight="700" text-anchor="middle">Suggest exercises →</text>
+
+  <!-- Home indicator -->
+  <rect x="148" y="820" width="94" height="5" rx="2.5" fill="rgba(255,255,255,0.25)"/>
+</svg>
