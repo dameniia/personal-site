@@ -8,8 +8,8 @@ const navItems = [
   { path: "/projects", label: "Projects" },
   { path: "/resume", label: "Resume" },
   { path: "/patch-notes", label: "Patch Notes" },
-  { path: "/articles", label: "Articles" },
   { path: "/gallery", label: "Gallery" },
+  { path: "/noplan", label: "no-plan" },
 ];
 
 export function Nav() {
