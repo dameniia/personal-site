@@ -66,7 +66,7 @@ export function Home() {
             <p>
               Outside of work I hike, travel, and usually have some side
               project going. Currently building a fitness app. Also slowly
-              learning photography.
+              learning photography and video editing.
             </p>
             <p className="home-links">
               <Link to="/projects">Browse my projects →</Link>
