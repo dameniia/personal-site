@@ -29,13 +29,11 @@ export function Resume() {
           <p className="resume-section-title">Summary</p>
           <div className="resume-summary">
             <ul>
-              <li>Lead Quality Assurance Analyst and Automation Engineer with <strong>8+ years</strong> delivering high-quality products in e-commerce, leading teams of <strong>4–7 QA Engineers</strong></li>
-              <li>Reduced production defect rates by <strong>50%</strong> and cut regression cycles from <strong>5 days to 3 hours</strong> by automating full regression suites with Cypress and Playwright</li>
-              <li>Enabling CI/CD with reliable automated end-to-end tests integrated into GitLab pipelines; prevented at least <strong>5 major severity issues</strong> in the last year</li>
-              <li>Initiated <strong>Accessibility testing</strong> and proactive quality processes that empowered Product teams to resolve <strong>multimillion-dollar issues</strong></li>
-              <li>Strong analytical skills using Quantum Metrics, Adobe Analytics, Splunk, and Sentry</li>
-              <li>Associate&apos;s Degree in Computer Science; Bachelor&apos;s in Economics &amp; Management with 4 years of business experience</li>
-              <li>4.5+ years as a designer and economist in construction</li>
+              <li>Sr. Automation Engineer and Lead Quality Engineer with <strong>8+ years</strong> of hands-on experience in advancing test automation and leading teams of <strong>3–7 QA Engineers</strong></li>
+              <li>Proven success in reducing production defect rates by <strong>50%</strong>, enabling and maintaining CI/CD end-to-end automation, and automating full regression suites — cutting regression cycles from <strong>5 days to just 3 hours</strong></li>
+              <li>Initiated and implemented proactive quality processes including <strong>Accessibility testing</strong> that empowered Product teams to uncover new opportunities and resolve <strong>multimillion-dollar issues</strong></li>
+              <li>After several years leading quality analysis, moved onto the engineering track to go deeper into automation and CI/CD — building the pipelines, quality gates, and AI tooling that let teams ship faster with more confidence</li>
+              <li>Associate&apos;s Degree in Computer Science; Bachelor&apos;s in Economics &amp; Management</li>
             </ul>
           </div>
 
@@ -50,7 +48,7 @@ export function Resume() {
               <span>AI tools: </span>Copilot, Claude Code, ChatGPT
             </p>
             <p>
-              <span>Automation: </span>Playwright Cypress, WebdriverIO (Selenium)
+              <span>Automation: </span>Playwright, Cypress, WebdriverIO (Selenium)
             </p>
             <p>
               <span>Analytics: </span>Adobe Analytics, Quantum Metrics,
@@ -70,17 +68,29 @@ export function Resume() {
           <div className="resume-entry">
             <div className="resume-entry-main">
               <p className="resume-entry-company">Lululemon USA Inc. — Seattle, WA</p>
+              <p className="resume-entry-role">Senior Quality Engineer</p>
+              <ul>
+                <li>Lead <strong>5 functional QE teams</strong> and an automation team of 3 SDETs, coordinating automation, functional, and cross-team delivery for a major enterprise program</li>
+                <li>Define the automation strategy and &ldquo;hard and soft gate&rdquo; rollout plan governing quality criteria across the program</li>
+                <li>Drive <strong>AI adoption</strong> in the quality space (Copilot, Claude Code) by building the instruction sets, skills, and agents that let the team produce end-to-end tests <strong>2–3× faster</strong></li>
+                <li>Champion shift-left and automation-first practices, enabling developers to catch and fix defects before functional and UAT validation and shortening the development cycle by <strong>~30%</strong></li>
+              </ul>
+            </div>
+            <span className="resume-entry-dates">May 2026 – present</span>
+          </div>
+
+          <div className="resume-entry">
+            <div className="resume-entry-main">
+              <p className="resume-entry-company">Lululemon USA Inc. — Seattle, WA</p>
               <p className="resume-entry-role">Lead Quality Assurance Analyst, AI and Automation Engineer</p>
               <ul>
-                <li>Driving <strong>AI innovation</strong> in QE space (Copilot and Claude Code) — building e2e tests with MCPs reducing development effort from <strong>hours to minutes</strong></li>
-                <li>Created <strong>AI sub-agents</strong> that allow QEs to create test cases based on Jira requirements and update the test case management tool with new test plans and test runs within minutes</li>
                 <li>Ensured alignment with the company&apos;s best quality practices and reduced production defect rate by <strong>50%</strong></li>
                 <li>Enhanced PREPROD E2E automation coverage and integrated PROD E2E tests into <strong>CI/CD GitLab pipeline</strong>, preventing at least <strong>5 major severity issues</strong> in the last year</li>
                 <li>Achieved <strong>92.5%</strong> automation coverage of regression suite and <strong>98.6%</strong> of smoke test suite with Cypress automation</li>
                 <li>Prepared proof of concept and cost saving analysis for migrating from <strong>Cypress to Playwright</strong>, leveraging AI for its delivery</li>
               </ul>
             </div>
-            <span className="resume-entry-dates">Mar 2023 – present</span>
+            <span className="resume-entry-dates">Mar 2023 – May 2026</span>
           </div>
 
           <div className="resume-entry">
@@ -88,12 +98,12 @@ export function Resume() {
               <p className="resume-entry-company">Lululemon USA Inc. — Seattle, WA</p>
               <p className="resume-entry-role">Senior Quality Assurance Analyst, Automation Engineer</p>
               <ul>
-                <li>
-                  Analysed guest and business impact of new features and
-                  existing friction points using Adobe Analytics, Medallia,
-                  Quantum Metrics, and Splunk
-                </li>
-                <li>Delivered coding and automation training to teammates</li>
+                <li>Automated key tests with WebdriverIO, reducing manual regression run time from <strong>5 days to 3 hours</strong></li>
+                <li>Implemented <strong>4 internal tools</strong> for the team that helped with repeated tasks and saved <strong>20–40%</strong> of time</li>
+                <li>Developed script to update test data in preprod environment, saving teams <strong>20–30%</strong> of time</li>
+                <li>Implemented daily guest feedback review process, uncovering over <strong>$30 million</strong> in production bugs</li>
+                <li>Delivered critical project to replace BE system for FE app under tight timelines by pivoting development towards <strong>Test-Driven Development</strong></li>
+                <li>Analysed guest and business impact using Adobe Analytics, Medallia, Quantum Metrics, and Splunk</li>
               </ul>
             </div>
             <span className="resume-entry-dates">Apr 2021 – Apr 2023</span>
@@ -104,11 +114,10 @@ export function Resume() {
               <p className="resume-entry-company">Lululemon USA Inc. — Seattle, WA</p>
               <p className="resume-entry-role">Automation Engineer, QA Analyst</p>
               <ul>
-                <li>Safeguarded core business deliverables while ensuring guest satisfaction</li>
-                <li>
-                  Introduced automation into QA processes, building smoke and
-                  regression test suites <strong>from the ground up</strong>
-                </li>
+                <li>Utilized Splunk, Adobe Analytics, Quantum Metrics, and Sentry to analyze guest and business impacts, reducing issue prioritization time by <strong>50%</strong> for Product Managers and Business Analysts</li>
+                <li>Identified architectural flaws saving the company over <strong>$20M annually</strong></li>
+                <li>Introduced and implemented E2E tests in the FE app pipeline, enabling developers to deploy to production with higher confidence</li>
+                <li>Introduced automation into QA processes, building smoke and regression test suites <strong>from the ground up</strong></li>
               </ul>
             </div>
             <span className="resume-entry-dates">Aug 2018 – Apr 2021</span>
@@ -212,7 +221,7 @@ export function Resume() {
               <p className="resume-entry-company">City College of San Francisco — San Francisco, CA</p>
               <p className="resume-entry-role">Associate&apos;s Degree in Computer Science</p>
             </div>
-            <span className="resume-entry-dates">2015 – 2018</span>
+            <span className="resume-entry-dates">2016 – 2018</span>
           </div>
 
           <div className="resume-entry">
@@ -231,6 +240,25 @@ export function Resume() {
               <p className="resume-entry-role">Secondary Education — GPA 4.9 / 5</p>
             </div>
             <span className="resume-entry-dates">Graduated May 2002</span>
+          </div>
+
+          {/* Certifications */}
+          <p className="resume-section-title">Certifications</p>
+
+          <div className="resume-entry">
+            <div className="resume-entry-main">
+              <p className="resume-entry-company">LinkedIn Learning</p>
+              <p className="resume-entry-role">Practical GitHub Copilot</p>
+            </div>
+            <span className="resume-entry-dates">Sep 2025</span>
+          </div>
+
+          <div className="resume-entry">
+            <div className="resume-entry-main">
+              <p className="resume-entry-company">LinkedIn Learning</p>
+              <p className="resume-entry-role">Amplify Your Critical Thinking with Generative AI</p>
+            </div>
+            <span className="resume-entry-dates">Sep 2025</span>
           </div>
 
         </div>

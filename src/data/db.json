@@ -83,6 +83,19 @@
       "title": "no-plan app page added",
       "body": "Added a dedicated product page for the no-plan fitness app — the most ambitious project on the site. Six full-bleed sections: vision, features, screenshots, tech stack, and live development roadmap.",
       "link": "/noplan"
+    },
+    {
+      "postId": 14,
+      "date": "August 9, 2026",
+      "title": "no-plan-app home section updated",
+      "body": "Updated the no-plan-app description on the home page and fixed the 'View project' link to point to the dedicated /noplan page.",
+      "link": "/noplan"
+    },
+    {
+      "postId": 15,
+      "date": "August 9, 2026",
+      "title": "Minor copy updates for Resume and About pages",
+      "body": "Small copy updates across the Resume and About pages."
     }
   ],
   "projects": [

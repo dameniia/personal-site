@@ -17,6 +17,7 @@ export function Home() {
             <span className="hero-stack-badge">TypeScript</span>
             <span className="hero-stack-badge">JavaScript</span>
             <span className="hero-stack-badge">GitLab CI</span>
+            <span className="hero-stack-badge">AI</span>
           </div>
         </div>
       </header>
@@ -33,12 +34,10 @@ export function Home() {
                 <h2 className="current-project-name">no-plan-app</h2>
               </div>
               <p className="current-project-desc">
-                Minimal-distraction fitness tracking that encourages building
-                plans on the fly with AI. Scan equipment and get a suggested
-                workout instantly — no noise, no quizzes, no accounts.
+                Minimal-distraction fitness tracking that encourages building plans on the fly with AI. Scan equipment and get suggested exercises instantly — no noise, no quizzes, no accounts.
               </p>
               <p className="current-project-stack">Swift · iOS · HealthKit · Claude AI</p>
-              <a href="/projects" className="current-project-link">View project →</a>
+              <a href="/noplan" className="current-project-link">View project →</a>
             </div>
             <div className="current-project-phones">
               <figure className="phone-frame">
@@ -59,17 +58,15 @@ export function Home() {
         <div className="home-intro">
           <div className="home-intro-text">
             <p>
-              Hey, I&apos;m <strong>Andrei</strong> — a Lead QA Analyst and
-              SDET with 8+ years in e-commerce, currently at Lululemon. I
-              spend my days building reliable test automation, driving quality
-              across engineering teams, and making sure great software actually
-              ships.
+              Hey, I&apos;m <strong>Andrei</strong> — Senior Quality Engineer
+              at Lululemon. I&apos;ve been in QA and automation for 8+ years,
+              mostly in e-commerce. These days I lead a few QE teams and spend
+              a lot of time on CI/CD and AI tooling.
             </p>
             <p>
-              Outside of work, you&apos;ll find me on a hiking trail, planning
-              my next trip somewhere new, or deep in a side project.
-              I&apos;m also slowly learning photography — still chasing the
-              perfect light.
+              Outside of work I hike, travel, and usually have some side
+              project going. Currently building a fitness app. Also slowly
+              learning photography and video editing.
             </p>
             <p className="home-links">
               <Link to="/projects">Browse my projects →</Link>
