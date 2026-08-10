@@ -15,15 +15,11 @@ export function About() {
           <div className="about-card">
             <span className="about-card-label">The Professional</span>
             <p>
-              Lead QA Analyst &amp; SDET at Lululemon with 8+ years shaping
-              the quality of e-commerce products. I specialize in test
-              automation, CI/CD pipelines, and building processes that help
-              engineering teams ship with confidence.
-            </p>
-            <p>
-              I&apos;ve led cross-functional quality efforts, mentored
-              teammates, and introduced automation at scale — from smoke suites
-              to full end-to-end regression coverage.
+              Senior Quality Engineer at Lululemon. I&apos;ve been in the QA and
+              automation space for 8+ years — mostly e-commerce, mostly
+              large-scale. Right now I lead a few QE teams and spend a lot of
+              time on automation tooling and figuring out where AI actually
+              saves time versus where it just adds noise.
             </p>
             <p>
               Curious about the work?{" "}
@@ -34,30 +30,26 @@ export function About() {
           <div className="about-card">
             <span className="about-card-label">The Journey</span>
             <p>
-              Born and raised in Russia and Kazakhstan. I completed a
-              Bachelor&apos;s in Economics &amp; Management in 2007, then
-              spent several years working in business and construction before
-              making a career pivot into tech.
+              Grew up in Russia and Kazakhstan, studied Economics in Tyumen,
+              worked in construction and business for a few years, then moved
+              to San Francisco in 2013 with a fairly open plan.
             </p>
             <p>
-              In 2013 I moved to the West Coast of the US, and in 2018 I
-              earned an Associate&apos;s Degree in Computer Science from City
-              College of San Francisco. That pivot stuck.
+              Ended up at City College taking CS classes, liked it a lot more
+              than expected, and haven&apos;t really looked back since.
             </p>
           </div>
 
           <div className="about-card">
             <span className="about-card-label">Beyond the Code</span>
             <p>
-              Outdoors is where I reset — hiking trails, exploring national
-              parks, and chasing views that no screen can replicate. I love
-              traveling and always have a next destination in mind.
+              I hike a lot. National parks, trail runs, anything that gets me
+              away from a screen for a few hours. I travel when I can and
+              usually have a next trip loosely planned.
             </p>
             <p>
-              When I&apos;m home, I&apos;m usually tinkering with a side
-              project, playing games, watching a good film, or trying a new
-              restaurant. I&apos;m also picking up photography — still figuring
-              out the golden hour.
+              At home it&apos;s usually a side project, a game, or a film.
+              Also trying to get decent at photography — still working on it.
             </p>
           </div>
         </div>
