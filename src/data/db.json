@@ -96,6 +96,13 @@
       "date": "August 9, 2026",
       "title": "Minor copy updates for Resume and About pages",
       "body": "Small copy updates across the Resume and About pages."
+    },
+    {
+      "postId": 16,
+      "date": "September 15, 2026",
+      "title": "noplan page redesigned",
+      "body": "The noplan product page has been rebuilt around a light, Apple-style layout — white and grey bands, a sharper type scale, and device mockups that show the real interface instead of placeholder bars. The standout features now lead: AI suggestions that read your own logged history, thirty-second quick logging, HealthKit auto-import from Apple Watch, and fully on-device storage with no account. Placeholder screenshot slots are gone.",
+      "link": "/noplan"
     }
   ],
   "projects": [
