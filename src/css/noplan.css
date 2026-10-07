@@ -147,6 +147,20 @@
 .np-body:last-child { margin-bottom: 0; }
 .np-body strong { color: var(--np-ink); font-weight: 600; }
 
+.np-points { list-style: none; padding: 0; }
+.np-points li { position: relative; padding-left: 18px; }
+.np-points li + li { margin-top: 6px; }
+.np-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--np-ink-2);
+}
+
 /* ── Hero ── */
 .np-hero { padding-top: 64px; padding-bottom: 0; }
 
@@ -334,6 +348,21 @@
   line-height: 1;
   margin-bottom: 4px;
 }
+
+.np-mark-icon {
+  display: block;
+  /* Vertical margin keeps the same 34px line box as the text marks so card
+     titles stay aligned across the row. */
+  width: 20px;
+  height: 20px;
+  margin: 7px 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.np-rings { transform: rotate(-90deg); }
 
 /* ── Feature split ── */
 .np-split {

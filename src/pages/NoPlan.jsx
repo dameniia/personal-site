@@ -5,51 +5,45 @@ import "../css/noplan.css";
 
 const HIGHLIGHTS = [
   {
-    mark: "30s",
-    title: "Log a session before you leave the gym.",
-    body: "Smart defaults fill in today's date and your last workout type. Two taps and it's saved.",
-  },
-  {
     mark: "AI",
-    title: "It notices what you skipped.",
-    body: "After enough sessions, noplan spots the gaps and says something. Once. Not every morning.",
-  },
-  {
-    mark: "◎",
-    title: "Close a ring, it's already logged.",
-    body: "HealthKit pulls finished workouts straight off your Apple Watch. No double entry.",
-  },
-  {
-    mark: "0",
-    title: "No account. No cloud. No sync.",
-    body: "Everything lives on your iPhone in SwiftData. There is no server to leak it.",
-  },
-];
-
-const FEATURES = [
-  {
     title: "Scan equipment, get exercises.",
-    body: "Point your camera at what you have and AI suggests exercises to match.",
+    body: "Point your camera at what you have.",
   },
   {
+    mark: (
+      <svg className="np-mark-icon" viewBox="0 0 34 34" aria-hidden="true">
+        <path d="M5 11h24M23 5l6 6-6 6" />
+        <path d="M29 23H5M11 17l-6 6 6 6" />
+      </svg>
+    ),
     title: "Swap and edit on the go.",
-    body: "Change an exercise or adjust a session mid-workout to keep it fun.",
+    body: "Change an exercise mid-workout.",
   },
   {
-    title: "Find new exercises fast.",
-    body: "Search by name, muscle, or equipment and add it in a tap.",
+    mark: "270",
+    title: "Pick from 270. Or add your own.",
+    body: "Search by name, muscle, or equipment.",
   },
   {
-    title: "Built-in exercise database.",
-    body: "A full library comes with the app. No blank page to start from.",
+    mark: (
+      <svg className="np-mark-icon np-rings" viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="17" cy="17" r="15" pathLength="100" strokeDasharray="78 100" />
+        <circle cx="17" cy="17" r="10" pathLength="100" strokeDasharray="62 100" />
+        <circle cx="17" cy="17" r="5" pathLength="100" strokeDasharray="88 100" />
+      </svg>
+    ),
+    title: "Apple Health integration.",
+    body: "Workouts sync with Apple Health and Apple Fitness.",
   },
   {
-    title: "Integrated with Apple Health.",
-    body: "Workouts and activity sync with the Health app, so your tracking stays in one place.",
-  },
-  {
-    title: "Nothing collected or shared.",
-    body: "No private information is collected, and none is shared.",
+    mark: (
+      <svg className="np-mark-icon" viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="17" cy="10" r="6" />
+        <path d="M6 32a11 11 0 0 1 22 0" />
+      </svg>
+    ),
+    title: "No account.",
+    body: "Your data stays on your iPhone.",
   },
 ];
 
@@ -61,14 +55,30 @@ const TECH = [
 ];
 
 const PHASES = [
-  { label: "Core logging and history", status: "done" },
-  { label: "Onboarding and guest profile", status: "done" },
-  { label: "AI suggestions and HealthKit", status: "active" },
-  { label: "Plans and scheduling", status: "upcoming" },
-  { label: "App Store launch", status: "upcoming" },
+  { label: "Tabs and general layout", status: "done" },
+  { label: "Profile tab", status: "done" },
+  { label: "Workout tab", status: "done" },
+  { label: "Exercise database", status: "done" },
+  { label: "Chats for Profile and Workout tabs", status: "done" },
+  { label: "Workout tab: creating a plan", status: "done" },
+  { label: "Workout tab: exercise UX/UI", status: "done" },
+  { label: "Workout tab: search", status: "done" },
+  { label: "Workout tab: AI suggestions", status: "done" },
+  { label: "Workout tab: editing", status: "done" },
+  { label: "On-device AI + Claude API integration", status: "done" },
+  { label: "Activity tab: progress tracking", status: "done" },
+  { label: "AI: chat modes and personalities", status: "done" },
+  { label: "AI: context and memory management", status: "done" },
+  { label: "Apple Health and Apple Fitness integration", status: "done" },
+  { label: "Lock Screen countdown and widgets", status: "done" },
+  { label: "Better audio signals and cues", status: "upcoming" },
+  { label: "Better performance and faster AI exercise suggestions", status: "upcoming" },
+  { label: "New swap-on-the-fly UX", status: "upcoming" },
+  { label: "AI pop-ups with summaries and suggestions after a workout", status: "upcoming" },
+  { label: "Superset UX", status: "upcoming" },
 ];
 
-const BADGE = { done: "Shipped", active: "In progress", upcoming: "Planned" };
+const BADGE = { done: "Completed", active: "In progress", upcoming: "Planned" };
 
 // Hero screen recording (Cloudinary). Until `src` is set, the hero shows the static mockup.
 const HERO_VIDEO = {
@@ -187,6 +197,24 @@ export function NoPlan() {
         </div>
       </section>
 
+      {/* ── Why ── */}
+      <section className="np-section np-section--alt" id="why">
+        <div className="np-inner np-inner--center np-reveal">
+          <h2 className="np-heading">Why no plan?</h2>
+          <p className="np-body">
+            noplan challenges the idea that you need to stick to one plan and grind
+            through the same exercises every day to make progress. Yes, you&apos;ve got
+            to follow the basics, but you can also keep it fun and exciting.
+          </p>
+          <p className="np-body">
+            After more than 15 years in the gym, I found myself wanting to try more
+            exercises or change up the ones I already do. Instead of a two-arm dumbbell
+            bench press, maybe do it with one arm, or on an incline or decline bench. No app
+            on the market gave me that experience and flexibility.
+          </p>
+        </div>
+      </section>
+
       {/* ── Design ── */}
       <section className="np-section">
         <div className="np-inner np-split np-split--flip np-reveal">
@@ -194,9 +222,17 @@ export function NoPlan() {
             <p className="np-eyebrow">Design</p>
             <h2 className="np-heading">Clean and minimalistic.</h2>
             <p className="np-body">
-              Only the design and functionality you need to track your progress.{" "}
-              <strong>No accounts, no quizzes, no personal information shared.</strong>
+              A minimalistic, Apple-like design that&apos;s easy to navigate, so you
+              never get distracted or overwhelmed. Only what you need.
             </p>
+            <ul className="np-body np-points">
+              <li>Dark and light mode support</li>
+              <li>Only 3 tabs: Profile, Activity, Workouts</li>
+              <li>Easy to add or swap exercises on the fly</li>
+              <li>
+                <strong>No accounts, no quizzes</strong>
+              </li>
+            </ul>
           </div>
           <div className="np-split-media">
             <Phone small>
@@ -219,12 +255,16 @@ export function NoPlan() {
         <div className="np-inner np-split np-reveal">
           <div>
             <p className="np-eyebrow">AI</p>
-            <h2 className="np-heading">A plan that adapts to you.</h2>
+            <h2 className="np-heading">Powered by AI.</h2>
             <p className="np-body">
-              noplan uses AI to track your progress, organize your schedule, and build
-              a profile that fits you. From there it creates workout plans that work
-              for you, and adjusts them as you go.{" "}
-              <strong>No streaks. No guilt.</strong>
+              Optionally, use AI to help build your profile, create or adjust your
+              workout plans, learn how to use equipment, and analyze your progress to
+              discover gaps.
+            </p>
+            <p className="np-body">Scan equipment and get suggested exercises.</p>
+            <p className="np-body">
+              Chats share context from your profile, your progress, and previous
+              conversations.
             </p>
           </div>
           <div className="np-split-media">
@@ -267,64 +307,6 @@ export function NoPlan() {
         </div>
       </section>
 
-      {/* ── Outstanding features ── */}
-      <section className="np-section np-section--alt">
-        <div className="np-inner">
-          <h2 className="np-heading np-reveal">Outstanding features.</h2>
-          <div className="np-rail">
-            {FEATURES.map(({ title, body }) => (
-              <article key={title} className="np-card">
-                <h3>{title}</h3>
-                <p>{body}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Quick Log + HealthKit ── */}
-      <section className="np-section">
-        <div className="np-inner np-split np-split--flip np-reveal">
-          <div>
-            <p className="np-eyebrow">Quick Log</p>
-            <h2 className="np-heading">Thirty seconds. Then back to your day.</h2>
-            <p className="np-body">
-              Open the app, confirm what it already guessed, done. Today&apos;s date and
-              your last workout type are filled in before you touch anything.
-            </p>
-            <p className="np-body">
-              Or skip it entirely — <strong>close a ring on your Apple Watch</strong> and
-              HealthKit hands the session straight to noplan. The best logging is the
-              kind you never do.
-            </p>
-          </div>
-          <div className="np-split-media">
-            <Phone small>
-              <p className="np-screen-title">Log a session</p>
-              <div className="np-row">
-                <span className="np-row-name">Type</span>
-                <span className="np-row-meta">Pull day</span>
-              </div>
-              <div className="np-row">
-                <span className="np-row-name">Date</span>
-                <span className="np-row-meta">Today</span>
-              </div>
-              <div className="np-row">
-                <span className="np-row-name">Duration</span>
-                <span className="np-row-meta">52 min</span>
-              </div>
-              <div className="np-nudge">
-                <p className="np-nudge-text">Save session</p>
-              </div>
-              <div className="np-row">
-                <span className="np-row-name">From Apple Watch</span>
-                <span className="np-row-meta">Auto</span>
-              </div>
-            </Phone>
-          </div>
-        </div>
-      </section>
-
       {/* ── Privacy ── */}
       <section className="np-section np-section--alt" id="privacy">
         <div className="np-inner np-inner--center np-reveal">
@@ -342,8 +324,8 @@ export function NoPlan() {
       <section className="np-section">
         <div className="np-inner np-stats np-reveal">
           <div>
-            <p className="np-stat-num">30s</p>
-            <p className="np-stat-label">to log a finished session</p>
+            <p className="np-stat-num">270</p>
+            <p className="np-stat-label">exercises built in</p>
           </div>
           <div>
             <p className="np-stat-num">0</p>
@@ -381,7 +363,8 @@ export function NoPlan() {
           <p className="np-eyebrow">Roadmap</p>
           <h2 className="np-heading">Built in the open.</h2>
           <p className="np-body">
-            Two phases shipped, one in progress. Headed for the App Store.
+            {PHASES.filter((p) => p.status === "done").length} of {PHASES.length} phases
+            completed.
           </p>
           <div className="np-phases">
             {PHASES.map(({ label, status }) => (
