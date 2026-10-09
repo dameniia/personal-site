@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import PropTypes from "prop-types";
 import "../css/noplan.css";
 
@@ -82,15 +82,21 @@ const BADGE = { done: "Completed", active: "In progress", upcoming: "Planned" };
 
 // Hero screen recording (Cloudinary). Until `src` is set, the hero shows the static mockup.
 const HERO_VIDEO = {
-  src: "",
-  poster: "",
+  src: "https://res.cloudinary.com/dvhlgdwdh/video/upload/f_auto,q_auto/v1791586878/hero_video_dnnaaf.mp4",
+  poster: "https://res.cloudinary.com/dvhlgdwdh/video/upload/so_0,w_800/v1791586878/hero_video_dnnaaf.jpg",
+};
+
+// AI section screenshots (Cloudinary). Empty `src` falls back to a placeholder mockup.
+const AI_SCREENS = {
+  before: { src: "https://res.cloudinary.com/dvhlgdwdh/image/upload/f_auto,q_auto,w_600/v1791587237/before_scanning_zq1jf3.png", alt: "noplan before scanning equipment" },
+  after: { src: "https://res.cloudinary.com/dvhlgdwdh/image/upload/f_auto,q_auto,w_600/v1791587237/after_scanning_fcmqdd.png", alt: "noplan exercise suggestions after scanning equipment" },
 };
 
 function Phone({ small, media, children }) {
   return (
     <div className={small ? "np-phone np-phone--sm" : "np-phone"}>
       <div className={media ? "np-screen np-screen--media" : "np-screen"}>
-        <div className="np-island" />
+        {!media && <div className="np-island" />}
         {children}
       </div>
     </div>
@@ -104,6 +110,31 @@ Phone.propTypes = {
 };
 
 export function NoPlan() {
+  const heroVideoRef = useRef(null);
+
+  // React doesn't reliably set the `muted` attribute, which blocks autoplay in some
+  // browsers. Force it, then play only while the video is on screen.
+  useEffect(() => {
+    const video = heroVideoRef.current;
+    if (!video) return undefined;
+
+    video.muted = true;
+    if (!("IntersectionObserver" in window)) {
+      video.play().catch(() => {});
+      return undefined;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) video.play().catch(() => {});
+        else video.pause();
+      },
+      { threshold: 0.25 }
+    );
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => {
     const targets = document.querySelectorAll(".np-reveal");
 
@@ -157,6 +188,7 @@ export function NoPlan() {
             {HERO_VIDEO.src ? (
               <Phone media>
                 <video
+                  ref={heroVideoRef}
                   className="np-screen-video"
                   src={HERO_VIDEO.src}
                   poster={HERO_VIDEO.poster || undefined}
@@ -235,16 +267,13 @@ export function NoPlan() {
             </ul>
           </div>
           <div className="np-split-media">
-            <Phone small>
-              <p className="np-screen-title">Today</p>
-              <div className="np-row">
-                <span className="np-row-name">Pull day</span>
-                <span className="np-row-meta">45 min</span>
-              </div>
-              <div className="np-row">
-                <span className="np-row-name">Easy run</span>
-                <span className="np-row-meta">30 min</span>
-              </div>
+            <Phone small media>
+              <img
+                className="np-screen-video"
+                src="https://res.cloudinary.com/dvhlgdwdh/image/upload/f_auto,q_auto,w_600/v1791586984/clean_design_exercise_view_agcux5.png"
+                alt="noplan exercise view: a clean, minimal workout screen"
+                loading="lazy"
+              />
             </Phone>
           </div>
         </div>
@@ -267,26 +296,51 @@ export function NoPlan() {
               conversations.
             </p>
           </div>
-          <div className="np-split-media">
-            <Phone small>
-              <p className="np-screen-title">Today</p>
-              <div className="np-nudge">
-                <p className="np-nudge-label">Suggested</p>
-                <p className="np-nudge-text">Three push days, no pull. Balance it out this week?</p>
-              </div>
-              <div className="np-row">
-                <span className="np-row-name">Push day</span>
-                <span className="np-row-meta">Mon</span>
-              </div>
-              <div className="np-row">
-                <span className="np-row-name">Push day</span>
-                <span className="np-row-meta">Wed</span>
-              </div>
-              <div className="np-row">
-                <span className="np-row-name">Push day</span>
-                <span className="np-row-meta">Fri</span>
-              </div>
-            </Phone>
+          <div className="np-split-media np-phone-pair">
+            <figure className="np-phone-fig">
+              {AI_SCREENS.before.src ? (
+                <Phone small media>
+                  <img
+                    className="np-screen-video"
+                    src={AI_SCREENS.before.src}
+                    alt={AI_SCREENS.before.alt}
+                    loading="lazy"
+                  />
+                </Phone>
+              ) : (
+                <Phone small>
+                  <p className="np-screen-title">Scan</p>
+                  <div className="np-nudge">
+                    <p className="np-nudge-label">Equipment</p>
+                    <p className="np-nudge-text">Point your camera at what you have.</p>
+                  </div>
+                </Phone>
+              )}
+              <figcaption className="np-phone-cap">Before scanning</figcaption>
+            </figure>
+            <figure className="np-phone-fig">
+              {AI_SCREENS.after.src ? (
+                <Phone small media>
+                  <img
+                    className="np-screen-video"
+                    src={AI_SCREENS.after.src}
+                    alt={AI_SCREENS.after.alt}
+                    loading="lazy"
+                  />
+                </Phone>
+              ) : (
+                <Phone small>
+                  <p className="np-screen-title">Suggested</p>
+                  <div className="np-row">
+                    <span className="np-row-name">Dumbbell press</span>
+                  </div>
+                  <div className="np-row">
+                    <span className="np-row-name">Goblet squat</span>
+                  </div>
+                </Phone>
+              )}
+              <figcaption className="np-phone-cap">After scanning</figcaption>
+            </figure>
           </div>
         </div>
       </section>

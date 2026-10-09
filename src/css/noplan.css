@@ -162,7 +162,7 @@
 }
 
 /* ── Hero ── */
-.np-hero { padding-top: 64px; padding-bottom: 0; }
+.np-hero { padding-top: 64px; padding-bottom: 72px; }
 
 .np-hero-sub {
   font-size: 19px;
@@ -376,6 +376,16 @@
 
 .np-split-media { display: flex; justify-content: center; }
 
+.np-phone-pair { gap: 20px; align-items: flex-start; }
+
+.np-phone-fig { margin: 0; text-align: center; }
+
+.np-phone-cap {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #6e6e73;
+}
+
 /* ── Stat band ── */
 .np-stats {
   display: grid;
@@ -547,6 +557,9 @@
 }
 
 @media (max-width: 600px) {
+  .np-phone-pair { gap: 12px; }
+  .np-phone-pair .np-phone--sm { width: 150px; border-radius: 28px; padding: 6px; }
+  .np-phone-pair .np-phone--sm .np-screen { border-radius: 23px; }
   .np-section { padding: 64px 22px; }
   .np-hero { padding-top: 44px; }
   .np-stats { grid-template-columns: 1fr; gap: 36px; }
