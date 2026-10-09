@@ -239,7 +239,7 @@ export function NoPlan() {
             to follow the basics, but you can also keep it fun and exciting.
           </p>
           <p className="np-body">
-            After more than 15 years in the gym, I found myself wanting to try more
+            After almost 18 years in the gym, I found myself wanting to try more
             exercises or change up the ones I already do. Instead of a two-arm dumbbell
             bench press, maybe do it with one arm, or on an incline or decline bench. No app
             on the market gave me that experience and flexibility.
