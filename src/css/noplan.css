@@ -147,8 +147,22 @@
 .np-body:last-child { margin-bottom: 0; }
 .np-body strong { color: var(--np-ink); font-weight: 600; }
 
+.np-points { list-style: none; padding: 0; }
+.np-points li { position: relative; padding-left: 18px; }
+.np-points li + li { margin-top: 6px; }
+.np-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--np-ink-2);
+}
+
 /* ── Hero ── */
-.np-hero { padding-top: 64px; padding-bottom: 0; }
+.np-hero { padding-top: 64px; padding-bottom: 72px; }
 
 .np-hero-sub {
   font-size: 19px;
@@ -190,6 +204,19 @@
 }
 
 .np-phone--sm .np-screen { border-radius: 31px; }
+
+.np-screen--media { padding: 0; background: #000; }
+
+.np-screen-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.np-screen--media .np-island { z-index: 1; }
 
 .np-island {
   position: absolute;
@@ -322,6 +349,21 @@
   margin-bottom: 4px;
 }
 
+.np-mark-icon {
+  display: block;
+  /* Vertical margin keeps the same 34px line box as the text marks so card
+     titles stay aligned across the row. */
+  width: 20px;
+  height: 20px;
+  margin: 7px 0;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.np-rings { transform: rotate(-90deg); }
+
 /* ── Feature split ── */
 .np-split {
   display: grid;
@@ -333,6 +375,16 @@
 .np-split--flip .np-split-media { order: -1; }
 
 .np-split-media { display: flex; justify-content: center; }
+
+.np-phone-pair { gap: 20px; align-items: flex-start; }
+
+.np-phone-fig { margin: 0; text-align: center; }
+
+.np-phone-cap {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #6e6e73;
+}
 
 /* ── Stat band ── */
 .np-stats {
@@ -505,6 +557,9 @@
 }
 
 @media (max-width: 600px) {
+  .np-phone-pair { gap: 12px; }
+  .np-phone-pair .np-phone--sm { width: 150px; border-radius: 28px; padding: 6px; }
+  .np-phone-pair .np-phone--sm .np-screen { border-radius: 23px; }
   .np-section { padding: 64px 22px; }
   .np-hero { padding-top: 44px; }
   .np-stats { grid-template-columns: 1fr; gap: 36px; }
