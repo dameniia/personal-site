@@ -82,8 +82,8 @@ const BADGE = { done: "Completed", active: "In progress", upcoming: "Planned" };
 
 // Hero screen recording (Cloudinary). Until `src` is set, the hero shows the static mockup.
 const HERO_VIDEO = {
-  src: "https://res.cloudinary.com/dvhlgdwdh/video/upload/f_auto,q_auto/v1791586878/hero_video_dnnaaf.mp4",
-  poster: "https://res.cloudinary.com/dvhlgdwdh/video/upload/so_0,w_800/v1791586878/hero_video_dnnaaf.jpg",
+  src: "https://res.cloudinary.com/dvhlgdwdh/video/upload/f_auto,q_auto/v1791737694/hero_video_2_ccgncv.mp4",
+  poster: "https://res.cloudinary.com/dvhlgdwdh/video/upload/so_0,w_800/v1791737694/hero_video_2_ccgncv.jpg",
 };
 
 // AI section screenshots (Cloudinary). Empty `src` falls back to a placeholder mockup.
