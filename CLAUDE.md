@@ -30,6 +30,10 @@ React SPA built with Vite + React Router. All pages are React components — the
 - `/resume` → `Resume`
 - `/projects` → `Projects`
 - `/patch-notes` → `PatchNotes`
+- `/articles` → `Articles`, `/gallery` → `Gallery`, `/gallery/:eventId` → `GalleryEvent`
+- `/demos/gamestart/shop/mybag` → standalone demo (no Nav/Footer)
+
+The **noplan product page no longer lives here**. It moved to https://no-plan.app (repo `dameniia/no-plan-site`). Nav and Home link out to it, and `public/.htaccess` 301s `/noplan` and `/noplan/post`.
 
 **Shared layout**: `Nav` and `Footer` live in `src/components/` and are rendered in `App.jsx` around all routes. The required DOM structure is:
 
@@ -65,7 +69,7 @@ This structure is required by the CSS sticky footer implementation — do not ch
 
 When adding a new project, add it to `projects.json`. When adding gallery media, add it to `gallery.json`.
 
-**Patch notes** (`src/data/db.json` → `patch-notes` array): Add a patch note for every significant update — new pages, new features, content additions (e.g. new gallery event), and visual changes. Each entry needs `postId` (increment from last), `date` (e.g. `"March 27, 2026"`), `title`, `body`, and optionally `link` (relative path to the relevant page). The latest patch note is shown on the Home page, so keep titles concise.
+**Patch notes** (`src/data/db.json` → `patch-notes` array): Add a patch note for every significant update — new pages, new features, content additions (e.g. new gallery event), and visual changes. Each entry needs `postId` (increment from last), `date` (e.g. `"March 27, 2026"`), `title`, `body`, and optionally `link` (a relative path for pages on this site, or a full `https://` URL for other sites; `PatchNotes.jsx` renders absolute URLs as plain anchors). The latest patch note is shown on the Home page, so keep titles concise.
 
 ## CSS
 
@@ -108,4 +112,13 @@ Filtering is fully implemented. `Projects.jsx` derives unique tags from `project
 
 ## Deployment
 
-GitHub Actions workflow (`.github/workflows/deploy.yml`) deploys to Hostinger via FTP on push to `main`. The `public/.htaccess` contains Apache rewrite rules: requests to non-existent files and non-existent directories are rewritten to `index.html` for client-side routing. Existing directories (e.g. legacy static project pages under `public_html/projects/`) are intentionally excluded from the rewrite so they continue to be served as-is.
+GitHub Actions (`.github/workflows/deploy.yml`) builds and deploys `dist/` to Hostinger via FTP on every push to `main` (merging a PR deploys).
+
+**The FTP login lands in the hosting home folder, not the web root.** The web root is `/domains/adameniia.com/public_html/`, so the workflow sets `server-dir` to that absolute path. Never change it back to `/` — that silently uploaded the site next to `domains/` where nothing serves it, while the run still reported success.
+
+- Secrets `FTP_SERVER` (bare IP, no `ftp://`), `FTP_USERNAME`, `FTP_PASSWORD` are per repo. `no-plan-site` uses a different account on the same host. Set secrets in the GitHub UI, or `gh secret set` **after `cd`-ing into this repo** (it acts on the current repo).
+- Re-running an old run replays that commit's workflow file; a workflow change needs a new commit on `main`.
+- `ECONNRESET (data socket)` failures are usually transient — re-run once before debugging.
+- Verify a deploy with the `verify-deploy` skill (`.claude/skills/verify-deploy`). A green run with `Server Files: 0`, or a "first publish" message when it isn't the first, means it hit the wrong folder.
+- `public/.htaccess` redirects `/noplan*` to no-plan.app, then rewrites non-existent files and directories to `index.html` for client-side routing. Real directories (e.g. legacy static `public_html/projects/`, `archive_03_2026`, `sfbadlands`) are excluded so they keep being served as-is.
+- Known issue: `/projects` returns 403 because the legacy static `projects/` folder shadows the React route.

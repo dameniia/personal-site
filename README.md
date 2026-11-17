@@ -50,4 +50,4 @@ public/
 
 ## Deployment
 
-Deployed to Hostinger via FTP using GitHub Actions (`.github/workflows/deploy.yml`) on every push to `main`. The `public/.htaccess` handles SPA routing on the Apache server.
+Deployed to Hostinger via FTP using GitHub Actions (`.github/workflows/deploy.yml`) on every push to `main`, into `/domains/adameniia.com/public_html/`. The `public/.htaccess` handles SPA routing and the `/noplan` redirect to [no-plan.app](https://no-plan.app). See `CLAUDE.md` for deploy gotchas.
