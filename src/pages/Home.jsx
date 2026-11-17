@@ -58,15 +58,10 @@ export function Home() {
         <div className="home-intro">
           <div className="home-intro-text">
             <p>
-              Hey, I&apos;m <strong>Andrei</strong> — Senior Quality Engineer
-              at Lululemon. I&apos;ve been in QA and automation for 8+ years,
-              mostly in e-commerce. These days I lead a few QE teams and spend
-              a lot of time on CI/CD and AI tooling.
+              Hey, I&apos;m <strong>Andrei</strong> — Senior Quality Engineer at Lululemon with 8+ years of experience. Leading the adoption of AI in quality engineering while delivering large-scale projects and guiding my team's transition from NA to Global.
             </p>
             <p>
-              Outside of work I hike, travel, and usually have some side
-              project going. Currently building a fitness app. Also slowly
-              learning photography and video editing.
+              Outside of work I hike or travel with my parter and two dogs, learn new technologies, and working on a side project. Currently building a fitness tracking app.
             </p>
             <p className="home-links">
               <Link to="/projects">Browse my projects →</Link>

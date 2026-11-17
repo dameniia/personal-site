@@ -15,11 +15,7 @@ export function About() {
           <div className="about-card">
             <span className="about-card-label">The Professional</span>
             <p>
-              Senior Quality Engineer at Lululemon. I&apos;ve been in the QA and
-              automation space for 8+ years — mostly e-commerce, mostly
-              large-scale. Right now I lead a few QE teams and spend a lot of
-              time on automation tooling and figuring out where AI actually
-              saves time versus where it just adds noise.
+              Senior Quality Engineer at Lululemon with 8+ years of experience. Leading the adoption of AI in quality engineering while delivering large-scale projects and guiding my team's transition from NA to Global.
             </p>
             <p>
               Curious about the work?{" "}
