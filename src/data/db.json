@@ -82,14 +82,14 @@
       "date": "May 15, 2026",
       "title": "no-plan app page added",
       "body": "Added a dedicated product page for the no-plan fitness app — the most ambitious project on the site. Six full-bleed sections: vision, features, screenshots, tech stack, and live development roadmap.",
-      "link": "/noplan"
+      "link": "https://no-plan.app"
     },
     {
       "postId": 14,
       "date": "August 9, 2026",
       "title": "no-plan-app home section updated",
       "body": "Updated the no-plan-app description on the home page and fixed the 'View project' link to point to the dedicated /noplan page.",
-      "link": "/noplan"
+      "link": "https://no-plan.app"
     },
     {
       "postId": 15,
@@ -102,21 +102,28 @@
       "date": "September 15, 2026",
       "title": "noplan page redesigned",
       "body": "The noplan product page has been rebuilt around a light, Apple-style layout — white and grey bands, a sharper type scale, and device mockups that show the real interface instead of placeholder bars. The standout features now lead: AI suggestions that read your own logged history, thirty-second quick logging, HealthKit auto-import from Apple Watch, and fully on-device storage with no account. Placeholder screenshot slots are gone.",
-      "link": "/noplan"
+      "link": "https://no-plan.app"
     },
     {
       "postId": 17,
       "date": "October 9, 2026",
       "title": "noplan page gets real app footage",
       "body": "The noplan hero now plays a screen recording of the app, and the Design and AI sections show real screenshots, including before and after scanning equipment.",
-      "link": "/noplan"
+      "link": "https://no-plan.app"
     },
     {
       "postId": 18,
       "date": "November 16, 2026",
       "title": "noplan roadmap: exercise stats and pictures",
       "body": "Added 30 exercise drawings with the muscles they work, and stats tracking under each exercise (sessions, estimated 1RM, 4-week trend, total weight). Both sit behind a pull-up at the bottom of the exercise screen, so nothing loads until you ask. Also on the roadmap as completed: a rest-over nudge on the Dynamic Island and Lock Screen.",
-      "link": "/noplan#roadmap"
+      "link": "https://no-plan.app/#roadmap"
+    },
+    {
+      "postId": 19,
+      "date": "November 16, 2026",
+      "title": "noplan has its own site",
+      "body": "The noplan product page moved to its own domain, no-plan.app. Old adameniia.com/noplan links redirect there.",
+      "link": "https://no-plan.app"
     }
   ],
   "projects": [
