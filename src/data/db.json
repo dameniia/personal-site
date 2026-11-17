@@ -110,6 +110,13 @@
       "title": "noplan page gets real app footage",
       "body": "The noplan hero now plays a screen recording of the app, and the Design and AI sections show real screenshots, including before and after scanning equipment.",
       "link": "/noplan"
+    },
+    {
+      "postId": 18,
+      "date": "November 16, 2026",
+      "title": "noplan roadmap: exercise stats and pictures",
+      "body": "Added 30 exercise drawings with the muscles they work, and stats tracking under each exercise (sessions, estimated 1RM, 4-week trend, total weight). Both sit behind a pull-up at the bottom of the exercise screen, so nothing loads until you ask. Also on the roadmap as completed: a rest-over nudge on the Dynamic Island and Lock Screen.",
+      "link": "/noplan#roadmap"
     }
   ],
   "projects": [
