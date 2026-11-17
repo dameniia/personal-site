@@ -1,4 +1,9 @@
 RewriteEngine On
+
+# noplan moved to its own domain (keep above the SPA fallback)
+RewriteRule ^noplan/post/?$ https://no-plan.app/post [R=301,L]
+RewriteRule ^noplan/?$ https://no-plan.app/ [R=301,L]
+
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [QSA,L]

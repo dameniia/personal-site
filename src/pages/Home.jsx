@@ -37,7 +37,7 @@ export function Home() {
                 Minimal-distraction fitness tracking that encourages building plans on the fly with AI. Scan equipment and get suggested exercises instantly — no noise, no quizzes, no accounts.
               </p>
               <p className="current-project-stack">Swift · iOS · HealthKit · Claude AI</p>
-              <a href="/noplan" className="current-project-link">View project →</a>
+              <a href="https://no-plan.app" className="current-project-link">View project →</a>
             </div>
             <div className="current-project-phones">
               <figure className="phone-frame">

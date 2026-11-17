@@ -9,7 +9,7 @@ const navItems = [
   { path: "/resume", label: "Resume" },
   { path: "/patch-notes", label: "Patch Notes" },
   { path: "/gallery", label: "Gallery" },
-  { path: "/noplan", label: "no-plan" },
+  { path: "https://no-plan.app", label: "no-plan", external: true },
 ];
 
 export function Nav() {
@@ -35,10 +35,12 @@ export function Nav() {
         <Link to="/" className="nav-logo">AD</Link>
 
         <ul className="nav-links">
-          {navItems.map(({ path, label, disabled }) => (
+          {navItems.map(({ path, label, disabled, external }) => (
             <li key={path}>
               {disabled ? (
                 <span className="nav-disabled" title="Coming soon">{label}</span>
+              ) : external ? (
+                <a href={path}>{label}</a>
               ) : (
                 <Link
                   to={path}
@@ -69,10 +71,12 @@ export function Nav() {
         aria-hidden={!isOpen}
       >
         <ul className="nav-overlay-links">
-          {navItems.map(({ path, label, disabled }) => (
+          {navItems.map(({ path, label, disabled, external }) => (
             <li key={path}>
               {disabled ? (
                 <span className="nav-disabled" title="Coming soon">{label}</span>
+              ) : external ? (
+                <a href={path}>{label}</a>
               ) : (
                 <Link
                   to={path}

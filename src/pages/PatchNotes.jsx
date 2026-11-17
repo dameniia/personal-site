@@ -30,9 +30,15 @@ export function PatchNotes() {
               <h3 className="patch-note-title">{note.title}</h3>
               <p className="patch-note-body">{note.body}</p>
               {note.link && (
-                <Link to={note.link} className="patch-note-link">
-                  View →
-                </Link>
+                /^https?:\/\//.test(note.link) ? (
+                  <a href={note.link} className="patch-note-link">
+                    View →
+                  </a>
+                ) : (
+                  <Link to={note.link} className="patch-note-link">
+                    View →
+                  </Link>
+                )
               )}
             </article>
           ))}
