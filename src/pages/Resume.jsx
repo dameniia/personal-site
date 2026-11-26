@@ -142,19 +142,6 @@ export function Resume() {
 
           <div className="resume-entry">
             <div className="resume-entry-main">
-              <p className="resume-entry-company">18th Street Bar Inc. — San Francisco, CA</p>
-              <p className="resume-entry-role">Bartender</p>
-              <ul>
-                <li>Delivered excellent customer service and maintained a welcoming atmosphere</li>
-                <li>Handled cash transactions, charges, and opening and closing procedures</li>
-                <li>Monitored and resolved service issues promptly</li>
-              </ul>
-            </div>
-            <span className="resume-entry-dates">Feb 2015 – Aug 2018</span>
-          </div>
-
-          <div className="resume-entry">
-            <div className="resume-entry-main">
               <p className="resume-entry-company">Svetlyachok LLC — Tyumen, Russia</p>
               <p className="resume-entry-role">Engineer / Cost Estimator</p>
               <ul>
