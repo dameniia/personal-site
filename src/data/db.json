@@ -124,6 +124,13 @@
       "title": "noplan has its own site",
       "body": "The noplan product page moved to its own domain, no-plan.app. Old adameniia.com/noplan links redirect there.",
       "link": "https://no-plan.app"
+    },
+    {
+      "postId": 20,
+      "date": "November 25, 2026",
+      "title": "Résumé refresh",
+      "body": "Updated the Résumé page to match the latest résumé and LinkedIn: current Senior Quality Engineer and Lead QA roles, new results (1,200+ automated test cases, visual regression and performance testing), and a refreshed summary. The downloadable PDF is now a single-column, two-page version.",
+      "link": "/resume"
     }
   ],
   "projects": [
