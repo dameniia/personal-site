@@ -83,8 +83,8 @@ export function Home() {
           <figure className="profile-photo">
             <img
               width="300"
-              height="320"
-              src="/images/index_pic.jpeg"
+              height="300"
+              src="/images/profile_photo.jpg"
               alt="Andrei Dameniia"
             />
           </figure>
