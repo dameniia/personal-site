@@ -9,7 +9,7 @@ export function Home() {
     <>
       <header className="hero-header">
         <div className="hero-inner">
-          <p className="hero-eyebrow">Lead QA · SDET · Playwright &amp; Cypress</p>
+          <p className="hero-eyebrow">Senior Quality Engineer · Lead QA · Playwright &amp; Cypress</p>
           <h1 className="hero-name">Andrei Dameniia</h1>
           <div className="hero-stack">
             <span className="hero-stack-badge">Playwright</span>
@@ -58,10 +58,10 @@ export function Home() {
         <div className="home-intro">
           <div className="home-intro-text">
             <p>
-              Hey, I&apos;m <strong>Andrei</strong> — Senior Quality Engineer at Lululemon with 8+ years of experience. Leading the adoption of AI in quality engineering while delivering large-scale projects and guiding my team's transition from NA to Global.
+              Hey, I&apos;m <strong>Andrei</strong> — Senior Quality Engineer at Lululemon with 8+ years of experience. Leading the adoption of AI in quality engineering while delivering large-scale projects and guiding my team&apos;s transition from NA to Global.
             </p>
             <p>
-              Outside of work I hike or travel with my parter and two dogs, learn new technologies, and working on a side project. Currently building a fitness tracking app.
+              Outside of work I hike or travel with my partner and two dogs, learn new technologies, and work on side projects. Currently building a fitness tracking app.
             </p>
             <p className="home-links">
               <Link to="/projects">Browse my projects →</Link>

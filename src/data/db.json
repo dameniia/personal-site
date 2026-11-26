@@ -124,6 +124,13 @@
       "title": "noplan has its own site",
       "body": "The noplan product page moved to its own domain, no-plan.app. Old adameniia.com/noplan links redirect there.",
       "link": "https://no-plan.app"
+    },
+    {
+      "postId": 20,
+      "date": "November 25, 2026",
+      "title": "Résumé refresh",
+      "body": "Résumé updated with the latest.",
+      "link": "/resume"
     }
   ],
   "projects": [
