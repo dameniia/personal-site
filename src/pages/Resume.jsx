@@ -142,19 +142,6 @@ export function Resume() {
 
           <div className="resume-entry">
             <div className="resume-entry-main">
-              <p className="resume-entry-company">18th Street Bar Inc. — San Francisco, CA</p>
-              <p className="resume-entry-role">Bartender</p>
-              <ul>
-                <li>Delivered excellent customer service and maintained a welcoming atmosphere</li>
-                <li>Handled cash transactions, charges, and opening and closing procedures</li>
-                <li>Monitored and resolved service issues promptly</li>
-              </ul>
-            </div>
-            <span className="resume-entry-dates">Feb 2015 – Aug 2018</span>
-          </div>
-
-          <div className="resume-entry">
-            <div className="resume-entry-main">
               <p className="resume-entry-company">Svetlyachok LLC — Tyumen, Russia</p>
               <p className="resume-entry-role">Engineer / Cost Estimator</p>
               <ul>
@@ -222,7 +209,6 @@ export function Resume() {
               <p className="resume-entry-company">City College of San Francisco — San Francisco, CA</p>
               <p className="resume-entry-role">Associate&apos;s Degree in Computer Science</p>
             </div>
-            <span className="resume-entry-dates">2016 – 2018</span>
           </div>
 
           <div className="resume-entry">
@@ -232,7 +218,6 @@ export function Resume() {
                 Bachelor&apos;s in Management &amp; Economics — GPA 4.6 / 5
               </p>
             </div>
-            <span className="resume-entry-dates">2002 – 2007</span>
           </div>
 
           <div className="resume-entry">
@@ -240,7 +225,6 @@ export function Resume() {
               <p className="resume-entry-company">High School No. 14 — Rudnyy, Kazakhstan</p>
               <p className="resume-entry-role">Secondary Education — GPA 4.9 / 5</p>
             </div>
-            <span className="resume-entry-dates">Graduated May 2002</span>
           </div>
 
           {/* Certifications */}
